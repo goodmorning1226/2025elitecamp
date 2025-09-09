@@ -1,184 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-scrollbar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Page</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
   <body>
-    <div class="w-[1440px] h-[2414px] relative bg-zinc-100 overflow-hidden">
+    <div class="w-full h-20 flex items-center justify-center bg-amber-300">
+      <p>navbar</p>
+    </div>
+    <div class="relative w-full aspect-39/20">
+      <img
+        src="image/mountain.svg"
+        alt="mountain"
+        class="absolute w-full top-22 z-0"
+      />
       <div
-        class="w-[1440px] h-32 left-0 top-0 absolute bg-gradient-to-l from-blue-400 via-violet-300 to-yellow-50"
+        class="flex flex-col absolute mx-auto gap-4 items-center top-20 inset-x-0 z-10"
+      >
+        <div class="lg:w-72 lg:h-24 bg-[#D9D9D9] rounded-[20px]"></div>
+        <div class="lg:h-32 aspect-77/10 bg-[#D9D9D9] rounded-[20px]"></div>
+        <div class="lg:h-9 aspect-108/5 bg-[#D9D9D9] rounded-[20px]"></div>
+      </div>
+      <!--
+      <div
+        class="absolute w-72 h-24 mx-auto top-20 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
       ></div>
       <div
-        class="w-[1440px] h-[803px] left-0 top-[102px] absolute bg-white rounded-tl-[20px] rounded-tr-[20px]"
+        class="absolute h-32 aspect-77/10 mx-auto top-48 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
       ></div>
       <div
-        class="w-96 h-[503px] left-[534px] top-[1352px] absolute bg-red-200 rounded-[20px]"
+        class="absolute h-9 aspect-108/5 mx-auto top-84 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
       ></div>
+      -->
+      <!--should be replaced by a rotated div-->
+      <img
+        src="image/door.svg"
+        alt="door"
+        class="absolute lg:w-auto lg:h-auto top-[140px] left-79/200 z-20"
+      />
+      <img
+        src="image/cloud.svg"
+        alt="cloud"
+        class="absolute lg:w-auto lg:h-auto m-auto top-[418px] inset-x-0 z-30"
+      />
+    </div>
+
+    <div class="flex flex-col w-full aspect-117/100 items-center bg-[#F3F3F3]">
+      <div class="w-5/6 lg:h-72 mt-20 bg-white rounded-[20px]"></div>
       <div
-        class="w-[1573.97px] h-[457.52px] left-[-94px] top-[217.27px] absolute rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-blue-400"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[70.87px] top-[348.97px] absolute bg-gradient-to-b from-blue-400/30 via-violet-300/30 to-yellow-50/30 rounded-2xl"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-94px] top-[235.39px] absolute rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-blue-400"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-94px] top-[235.07px] absolute bg-gradient-to-b from-blue-400/30 via-violet-300/30 to-yellow-50/30 rounded-2xl"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-94px] top-[260.47px] absolute rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-blue-400"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[503.03px] top-[275.80px] absolute bg-gradient-to-b from-blue-400/30 via-violet-300/30 to-yellow-50/30 rounded-2xl"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-94px] top-[275.80px] absolute rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-blue-400"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-92.98px] top-[188px] absolute bg-gradient-to-b from-blue-400/30 via-violet-300/30 to-yellow-50/30 rounded-2xl"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[-92.98px] top-[188.31px] absolute rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-blue-400"
-      ></div>
-      <div
-        class="w-[1573.97px] h-[457.52px] left-[80px] top-[370.48px] absolute bg-gradient-to-b from-blue-400/30 via-violet-300/30 to-yellow-50/30 rounded-2xl"
-      ></div>
-      <div
-        class="w-96 h-[503px] left-[125px] top-[1352px] absolute bg-rose-200 rounded-[20px]"
-      ></div>
-      <div
-        class="w-96 h-[503px] left-[-284px] top-[1352px] absolute bg-yellow-50 rounded-[20px]"
-      ></div>
-      <div
-        class="w-96 h-[503px] left-[943px] top-[1352px] absolute bg-violet-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-96 h-[503px] left-[1352px] top-[1352px] absolute bg-blue-400 rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-96 left-[150px] top-[1371px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-16 left-[148px] top-[1756px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-16 left-[559px] top-[1756px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-16 left-[966px] top-[1756px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-96 left-[559px] top-[1371px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-96 left-[968px] top-[1371px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-96 left-[1377px] top-[1371px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-96 left-[-259px] top-[1371px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-28 h-28 left-[16px] top-[1549px] absolute bg-zinc-300 rounded-full"
-      ></div>
-      <div
-        class="w-28 h-28 left-[1315px] top-[1549px] absolute bg-zinc-300 rounded-full"
-      ></div>
-      <div
-        class="w-[1440px] h-80 left-0 top-[2085px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-12 h-12 left-[26px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-60 h-12 left-[94px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-12 h-12 left-[1361px] top-[26px] absolute bg-white rounded-full"
-      ></div>
-      <div
-        class="w-[1440px] h-96 left-0 top-[840px] absolute bg-zinc-100 rounded-[20px]"
-      ></div>
-      <div
-        class="w-[1190px] h-72 left-[125px] top-[919px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-16 left-[125px] top-[2145px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-48 h-11 left-[125px] top-[2250px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-52 h-9 left-[549px] top-[2145px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-52 h-9 left-[831px] top-[2145px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-52 h-9 left-[1112px] top-[2145px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-36 h-36 left-[549px] top-[2215px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-36 h-36 left-[831px] top-[2215px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-36 h-36 left-[1112px] top-[2215px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-72 h-24 left-[579px] top-[178px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-[1060px] h-36 left-[190px] top-[288px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-[777px] h-9 left-[341px] top-[441px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-72 h-96 left-[534.34px] top-[283.09px] absolute origin-top-left rotate-[-17.78deg] bg-white rounded-tl-[200px] rounded-tr-[200px] border-[10px] border-blue-400"
-      ></div>
-      <div
-        class="w-72 h-96 left-[534px] top-[284.75px] absolute origin-top-left rotate-[-17.78deg] rounded-tl-[200px] rounded-tr-[200px] border-[12px] border-blue-400"
-      ></div>
-      <div
-        class="w-24 h-24 left-[631px] top-[424px] absolute bg-zinc-300 rounded-full"
-      ></div>
-      <div
-        class="w-36 h-16 left-[125px] top-[675px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-8 h-8 left-[125px] top-[749px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-8 h-8 left-[1175px] top-[749px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-24 h-8 left-[166px] top-[749px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-24 h-8 left-[1216px] top-[749px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-36 h-16 left-[1175px] top-[675px] absolute bg-zinc-300 rounded-[20px]"
-      ></div>
-      <div
-        class="w-[822px] h-0 left-[309px] top-[734px] absolute outline outline-1 outline-offset-[-0.50px] outline-black"
-      ></div>
-      <div
-        class="w-14 h-0 left-[1131px] top-[733px] absolute origin-top-left rotate-[-156.14deg] outline outline-1 outline-offset-[-0.50px] outline-black"
-      ></div>
-      <div
-        class="w-80 h-16 left-[1377px] top-[1756px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-80 h-16 left-[-261px] top-[1756px] absolute bg-white rounded-[20px]"
+        id="card-container"
+        class="flex w-full mt-40 gap-10 overflow-x-scroll no-scrollbar"
       ></div>
     </div>
+
+    <footer class="w-full h-56 bg-amber-300">
+      <p>footer</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,36 @@
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    min-width: 372px;
+    height: 503px;
+    border-radius: 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .card-compon1 {
+    width: 322px;
+    height: 355px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+  }
+
+  .card-compon2 {
+    width: 324px;
+    height: 67px;
+    border-radius: 22px;
+    background-color: white;
+  }
+}
