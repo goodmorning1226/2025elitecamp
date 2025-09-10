@@ -13,51 +13,85 @@
       <img
         src="image/mountain.svg"
         alt="mountain"
-        class="absolute w-full top-22 z-0"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
       />
       <div
         id="title"
-        class="flex flex-col absolute mx-auto gap-4 items-center top-20 inset-x-0 z-10"
+        style="--t: 80"
+        class="flex flex-col absolute mx-auto gap-4 items-center inset-x-0 z-10 adjust_top"
       >
-        <div class="lg:w-72 lg:h-24 bg-[#D9D9D9] rounded-[20px]"></div>
-        <div class="lg:h-32 aspect-77/10 bg-[#D9D9D9] rounded-[20px]"></div>
-        <div class="lg:h-9 aspect-108/5 bg-[#D9D9D9] rounded-[20px]"></div>
+        <div
+          style="--w: 288"
+          class="aspect-3/1 bg-[#D9D9D9] rounded-[20px] adjust_width"
+        ></div>
+        <div
+          style="--h: 128"
+          class="aspect-774/100 bg-[#D9D9D9] rounded-[20px] adjust_height"
+        ></div>
+        <div
+          style="--h: 36"
+          class="aspect-108/5 bg-[#D9D9D9] rounded-[20px] adjust_height"
+        ></div>
       </div>
 
       <!--should be replaced by a rotated div-->
-      <img
-        src="image/door.svg"
-        alt="door"
-        id="door"
-        class="absolute lg:w-auto lg:h-auto top-[140px] left-79/200 z-20"
-      />
-      <img
-        src="image/cloud.svg"
-        alt="cloud"
-        id="cloud"
-        class="absolute lg:w-auto lg:h-auto m-auto top-[418px] inset-x-0 z-30"
-      />
+      <div style="--t: 140" class="absolute w-full h-auto z-20 adjust_top">
+        <div class="relative w-full h-full">
+          <img
+            src="image/door.svg"
+            alt="door"
+            id="door"
+            class="absolute w-[23.4%] h-auto top-0 left-79/200 z-20"
+          />
+          <img
+            src="image/cloud.svg"
+            alt="cloud"
+            style="--t: 278"
+            id="cloud"
+            class="absolute w-[59%] h-auto m-auto inset-x-0 z-30 adjust_top"
+          />
+        </div>
+      </div>
 
       <div
+        style="--g: 48; --t: 608"
         id="arrow_container"
-        class="flex absolute mx-auto gap-12 justify-center items-center top-[608px] inset-x-0 z-20"
+        class="flex absolute mx-auto justify-center items-center top-[608px] inset-x-0 z-20 adjust_gap adjust_top"
       >
-        <div id="box1" class="w-36 h-16 top bg-[#D9D9D9] rounded-[20px]"></div>
-        <div id="arrow" class="relative w-[822px] h-[0.5px]">
+        <div
+          style="--w: 144"
+          id="box1"
+          class="aspect-9/4 bg-[#D9D9D9] rounded-[20px] adjust_width"
+        ></div>
+        <div
+          style="--w: 822"
+          id="arrow"
+          class="relative h-[0.5px] adjust_width"
+        >
           <div class="absolute w-full h-full left-0 bg-black"></div>
           <div
-            class="absolute w-16 h-full bottom-[13px] right-[-3px] bg-black rotate-[-156deg]"
+            style="--w: 64; --b: 13; --r: -3"
+            class="absolute h-full bg-black rotate-[-156deg] adjust_width adjust_bottom adjust_right"
           ></div>
         </div>
-        <div id="box2" class="w-36 h-16 top bg-[#D9D9D9] rounded-[20px]"></div>
+        <div
+          style="--w: 144"
+          id="box2"
+          class="aspect-9/4 bg-[#D9D9D9] rounded-[20px] adjust_width"
+        ></div>
       </div>
     </div>
 
     <div class="flex flex-col w-full aspect-117/100 items-center bg-[#F3F3F3]">
-      <div class="w-5/6 lg:h-72 mt-20 bg-white rounded-[20px]"></div>
       <div
+        style="--h: 288; --mt: 80"
+        class="w-5/6 bg-white rounded-[20px] adjust_height adjust_marginT"
+      ></div>
+      <div
+        style="--g: 40; --mt: 160"
         id="card-container"
-        class="flex w-full mt-40 gap-10 overflow-x-scroll no-scrollbar"
+        class="flex w-full overflow-x-scroll no-scrollbar adjust_marginT adjust_gap"
       ></div>
     </div>
 
