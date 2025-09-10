@@ -89,10 +89,25 @@
         class="w-5/6 bg-white rounded-[20px] adjust_height adjust_marginT"
       ></div>
       <div
-        style="--g: 40; --mt: 160"
-        id="card-container"
-        class="flex w-full overflow-x-scroll no-scrollbar adjust_marginT adjust_gap"
-      ></div>
+        style="--mt: 160"
+        class="flex relative w-full justify-center items-center adjust_marginT"
+      >
+        <div
+          style="--w: 109"
+          id="left_arrow"
+          class="absolute aspect-square left-3 bg-[#D9D9D9] rounded-full adjust_width z-10"
+        ></div>
+        <div
+          style="--g: 40"
+          id="card-container"
+          class="flex w-full overflow-x-scroll no-scrollbar adjust_gap z-0"
+        ></div>
+        <div
+          style="--w: 109"
+          id="right_arrow"
+          class="absolute aspect-square right-3 bg-[#D9D9D9] rounded-full adjust_width z-10"
+        ></div>
+      </div>
     </div>
 
     <footer class="w-full h-56 bg-white"></footer>
