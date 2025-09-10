@@ -7,6 +7,62 @@
   scrollbar-width: none;
 }
 
+#navbar {
+  background: linear-gradient(
+    to left,
+    #53a1c9 0%,
+    #b7a9dd 21%,
+    #fdc3be 54%,
+    #fff6e3 100%
+  );
+}
+
+#title {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#door {
+  animation-name: riseUp;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#cloud {
+  animation-name: riseUp;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#arrow {
+  animation-name: slideIn;
+  animation-duration: 2.5s;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#box1 {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#box2 {
+  animation-name: slideIn;
+  animation-duration: 3s;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
 @media (min-width: 1024px) {
   .card {
     display: flex;
@@ -32,5 +88,34 @@
     height: 67px;
     border-radius: 22px;
     background-color: white;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

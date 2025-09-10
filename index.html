@@ -8,44 +8,49 @@
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
   <body>
-    <div class="w-full h-20 flex items-center justify-center bg-amber-300">
-      <p>navbar</p>
-    </div>
-    <div class="relative w-full aspect-39/20">
+    <div id="navbar" class="w-full h-20"></div>
+    <div class="relative w-full aspect-78/41">
       <img
         src="image/mountain.svg"
         alt="mountain"
         class="absolute w-full top-22 z-0"
       />
       <div
+        id="title"
         class="flex flex-col absolute mx-auto gap-4 items-center top-20 inset-x-0 z-10"
       >
         <div class="lg:w-72 lg:h-24 bg-[#D9D9D9] rounded-[20px]"></div>
         <div class="lg:h-32 aspect-77/10 bg-[#D9D9D9] rounded-[20px]"></div>
         <div class="lg:h-9 aspect-108/5 bg-[#D9D9D9] rounded-[20px]"></div>
       </div>
-      <!--
-      <div
-        class="absolute w-72 h-24 mx-auto top-20 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
-      ></div>
-      <div
-        class="absolute h-32 aspect-77/10 mx-auto top-48 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
-      ></div>
-      <div
-        class="absolute h-9 aspect-108/5 mx-auto top-84 inset-x-0 z-10 bg-[#D9D9D9] rounded-[20px]"
-      ></div>
-      -->
+
       <!--should be replaced by a rotated div-->
       <img
         src="image/door.svg"
         alt="door"
+        id="door"
         class="absolute lg:w-auto lg:h-auto top-[140px] left-79/200 z-20"
       />
       <img
         src="image/cloud.svg"
         alt="cloud"
+        id="cloud"
         class="absolute lg:w-auto lg:h-auto m-auto top-[418px] inset-x-0 z-30"
       />
+
+      <div
+        id="arrow_container"
+        class="flex absolute mx-auto gap-12 justify-center items-center top-[608px] inset-x-0 z-20"
+      >
+        <div id="box1" class="w-36 h-16 top bg-[#D9D9D9] rounded-[20px]"></div>
+        <div id="arrow" class="relative w-[822px] h-[0.5px]">
+          <div class="absolute w-full h-full left-0 bg-black"></div>
+          <div
+            class="absolute w-16 h-full bottom-[13px] right-[-3px] bg-black rotate-[-156deg]"
+          ></div>
+        </div>
+        <div id="box2" class="w-36 h-16 top bg-[#D9D9D9] rounded-[20px]"></div>
+      </div>
     </div>
 
     <div class="flex flex-col w-full aspect-117/100 items-center bg-[#F3F3F3]">
@@ -56,9 +61,7 @@
       ></div>
     </div>
 
-    <footer class="w-full h-56 bg-amber-300">
-      <p>footer</p>
-    </footer>
+    <footer class="w-full h-56 bg-white"></footer>
 
     <script src="js/main.js"></script>
   </body>
