@@ -91,13 +91,13 @@
 
 .reveal_to_t {
   opacity: 0;
-  transform: translateY(50%);
-  transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .reveal_to_t.in-view {
-  opacity: 1;
-  transform: translateY(0);
+  animation-name: reveal_t;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 .reveal_to_l {
@@ -120,6 +120,13 @@
 .reveal_to_r.in-view {
   opacity: 1;
   transform: translateX(0);
+}
+
+.trip_banner {
+  animation-name: fadeIn;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .adjust_width {
@@ -145,6 +152,18 @@
 
 .adjust_marginY {
   margin-block: calc(var(--my) / 1440 * 100vw);
+}
+
+.adjust_paddingT {
+  padding-top: calc(var(--pt) / 1440 * 100vw);
+}
+
+.adjust_paddingB {
+  padding-bottom: calc(var(--pb) / 1440 * 100vw);
+}
+
+.adjust_paddingX {
+  padding-inline: calc(var(--px) / 1440 * 100vw);
 }
 
 .adjust_gap {
@@ -190,6 +209,15 @@
   0% {
     transform: translateX(-100%);
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal_t {
+  0% {
+    transform: translateY(25%);
   }
   100% {
     opacity: 1;
