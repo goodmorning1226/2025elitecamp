@@ -220,7 +220,7 @@ nav li {
   height: 50vh;
   background: 
     linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url(../images/background.jpg) no-repeat center/cover;
+    url(../image/background.jpg) no-repeat center/cover;
   color: white;
   display: flex;
   align-items: center;
