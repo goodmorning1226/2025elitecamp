@@ -62,7 +62,7 @@ if (reveal_to_t.length > 0) {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.1 }
   );
 
   reveal_to_t.forEach((elem) => io.observe(elem));

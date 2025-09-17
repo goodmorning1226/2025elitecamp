@@ -129,6 +129,41 @@
   animation-fill-mode: forwards;
 }
 
+.text_box_shadow {
+  box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+  .image_width {
+    width: 92%;
+    max-width: 1072px;
+  }
+  .text_box_width {
+    width: 92%;
+    max-width: 1072px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .image_width {
+    width: 85%;
+    max-width: 1072px;
+  }
+  .text_box_width {
+    width: 85%;
+    max-width: 1072px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image_width {
+    width: calc(1072 / 1440 * 100vw);
+  }
+  .text_box_width {
+    width: calc(1072 / 1440 * 100vw);
+  }
+}
+
 .adjust_width {
   width: calc(var(--w) / 1440 * 100vw);
 }
@@ -148,6 +183,10 @@
 
 .adjust_marginB {
   margin-bottom: calc(var(--mb) / 1440 * 100vw);
+}
+
+.adjust_marginX {
+  margin-inline: calc(var(--mx) / 1440 * 100vw);
 }
 
 .adjust_marginY {
