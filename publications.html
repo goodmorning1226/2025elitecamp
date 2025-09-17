@@ -1,96 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant" class="no-scrollbar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Page</title>
+    <title>狀元出品</title>
+    <meta name="description" content="狀元出品：紀念專刊、行前手冊與回顧影片（台灣行／大陸行）。" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
-  <body>
-    <div class="w-[1440px] h-[2769px] relative bg-zinc-100 overflow-hidden">
-      <div
-        class="w-[1440px] h-80 left-0 top-0 absolute bg-gradient-to-l from-blue-400 via-violet-300 to-yellow-50"
-      ></div>
-      <div
-        class="w-[1440px] h-32 left-0 top-[2641px] absolute bg-zinc-300"
-      ></div>
-      <div
-        class="w-12 h-12 left-[26px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-60 h-12 left-[94px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-60 h-12 left-[341px] top-[2677px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-60 h-12 left-[851px] top-[2677px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-96 h-32 left-[520px] top-[145px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[953px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[1153px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[1253px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[1353px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[853px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-20 h-12 left-[1053px] top-[26px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-[1027px] h-96 left-[206px] top-[497px] absolute bg-zinc-300"
-      ></div>
-      <div
-        class="w-[1027px] h-96 left-[206px] top-[1058px] absolute bg-zinc-300"
-      ></div>
-      <div
-        class="w-72 h-16 left-[570px] top-[1514px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-72 h-16 left-[570px] top-[2075px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-72 h-16 left-[570px] top-[968px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-72 h-16 left-[570px] top-[411px] absolute bg-white rounded-[20px]"
-      ></div>
-      <div
-        class="w-[1027px] h-96 left-[206px] top-[1604px] absolute bg-zinc-300"
-      ></div>
-      <div
-        class="w-[1027px] h-96 left-[206px] top-[2165px] absolute bg-zinc-300"
-      ></div>
-      <div
-        class="left-[648px] top-[424px] absolute justify-start text-black text-4xl font-normal font-['Inter']"
-      >
-        紀念專刊
+  <body class="bg-zinc-100 text-black">
+
+    <!-- 導覽（沿用首頁 #navbar 的漸層） -->
+    <header class="w-full">
+      <div class="mx-auto w-5/6">
+        <div class="py-4 flex items-center">
+          <!-- 左側：站名 -->
+          <a href="/" class="site-title mr-auto">2025 臺大北大菁英交流營</a>
+          <!-- 右側：導覽列 -->
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-link hover:underline">首頁</a></li>
+              <li><a href="#" class="nav-link hover:underline">關於</a></li>
+              <li><a href="#" class="nav-link hover:underline">參與成員</a></li>
+              <li><a href="#" class="nav-link hover:underline">行萬里路</a></li>
+              <li><a href="#" class="nav-link hover:underline">感謝信</a></li>
+              <li><a href="#" class="nav-link hover:underline">狀元出品</a></li>
+              <li><a href="#" class="nav-link hover:underline">照片集</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div
-        class="left-[648px] top-[981px] absolute justify-start text-black text-4xl font-normal font-['Inter']"
-      >
-        行前手冊
+    </header>
+
+    <!-- 主要內容 -->
+    <main id="content" class="mx-auto max-w-5xl py-8 lg:py-12">
+      <section class="title">
+        <h1 class="sr-only">狀元出品</h1>
+      </section>
+
+      <div class="mx-auto w-5/6">
+        <!-- 1) 紀念專刊 -->
+        <section class="mb-12">
+          <div class="section-header">紀念專刊</div>
+          <article class="bg-white shadow-sm overflow-hidden">
+            <div class="p-0">
+              <!-- 直接內嵌 PDF；寬度 100%，高度會隨視窗變化 -->
+              <object
+                data="files/專刊.pdf"  
+                type="application/pdf"
+                width="100%"
+                style="height: min(80vh, 900px); display: block;"
+                aria-label="紀念專刊 PDF"
+              >
+                <p class="p-4">
+                  你的瀏覽器不支援內嵌 PDF。你可以
+                  <a class="underline" href="files/專刊.pdf" target="_blank" rel="noopener">
+                    下載或以新分頁開啟 PDF
+                  </a>。
+                </p>
+              </object>
+            </div>
+          </article>
+        </section>
+
+        <!-- 2) 行前手冊 -->
+        <section class="mb-12">
+          <div class="section-header">行前手冊</div>
+          <article class="bg-white shadow-sm overflow-hidden">
+            <div class="p-0">
+              <object
+                data="files/before_trip.pdf"  
+                type="application/pdf"
+                width="100%"
+                style="height: min(80vh, 900px); display: block;"
+                aria-label="行前手冊 PDF"
+              >
+                <p class="p-4">
+                  你的瀏覽器不支援內嵌 PDF。你可以
+                  <a class="underline" href="files/before_trip.pdf" target="_blank" rel="noopener">
+                    下載或以新分頁開啟 PDF
+                  </a>。
+                </p>
+              </object>
+            </div>
+          </article>
+        </section>
+
+        <!-- 3) 台灣行 回顧影片 -->
+        <section class="mb-12">
+          <div class="section-header">台灣行 回顧影片</div>
+          <article class="bg-white shadow-sm overflow-hidden">
+            <div class="relative w-full" style="padding-top:56.25%;">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/XqZsoesa55w"
+                title="台灣行 回顧影片"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4 lg:p-6">
+              <p class="text-sm lg:text-base">含字幕與章節標記，方便快速回看重點。</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- 4) 大陸行 回顧影片 -->
+        <section>
+          <div class="section-header">大陸行 回顧影片</div>
+          <article class="bg-white shadow-sm overflow-hidden">
+            <div class="relative w-full" style="padding-top:56.25%;">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/XqZsoesa55w"
+                title="大陸行 回顧影片"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4 lg:p-6">
+              <p class="text-sm lg:text-base">含字幕與章節標記，方便快速回看重點。</p>
+            </div>
+          </article>
+        </section>
+
       </div>
-      <div
-        class="left-[589px] top-[1527px] absolute justify-start text-black text-4xl font-normal font-['Inter']"
-      >
-        台灣行 回顧影片
+    </main>
+
+    <footer class="w-full bg-zinc-300 mt-12">
+      <div class="mx-auto w-5/6 max-w-5xl py-6 flex items-center justify-between">
       </div>
-      <div
-        class="left-[588px] top-[2088px] absolute justify-start text-black text-4xl font-normal font-['Inter']"
-      >
-        大陸行 回顧影片
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
