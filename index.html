@@ -7,9 +7,42 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
-  <body>
-    <div id="navbar" class="w-full h-20"></div>
-    <div class="relative w-full aspect-78/41">
+  <body style="font-family: 'Noto Sans TC'">
+    <div id="navbar" class="w-full h-[135px]">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="./image/navbar_logo.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-[#968080]">
+          2025臺大北大菁英交流營
+        </h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="relative w-full aspect-78/41 mt-[-36px] bg-white rounded-t-2xl">
       <img
         src="./image/mountain.svg"
         alt="mountain"
@@ -21,18 +54,34 @@
         style="--g: 16; --t: 80"
         class="flex flex-col absolute mx-auto items-center inset-x-0 z-10 adjust_gap adjust_top"
       >
+        <h2
+          style="--text: 80; --line: 80"
+          class="font-bold text-[#968080] adjust_text"
+        >
+          第21屆
+        </h2>
+        <h1
+          style="--text: 128; --line: 128"
+          class="font-black text-[#968080] adjust_text"
+        >
+          臺大北大狀元營
+        </h1>
         <div
-          style="--w: 288"
-          class="aspect-3/1 bg-[#D9D9D9] rounded-[20px] adjust_width"
-        ></div>
-        <div
-          style="--h: 128"
-          class="aspect-774/100 bg-[#D9D9D9] rounded-[20px] adjust_height"
-        ></div>
-        <div
-          style="--h: 36"
-          class="aspect-108/5 bg-[#D9D9D9] rounded-[20px] adjust_height"
-        ></div>
+          style="--h: 36; --text: 28; --line: 28"
+          class="flex aspect-108/5 justify-between adjust_height font-thin text-[#968080] adjust_text"
+        >
+          <h3>The 21st Elite Camp</h3>
+          <div style="--g: 12" class="flex h-full adjust_gap items-center">
+            <div style="--w: 71" class="relative h-[0.5px] adjust_width">
+              <div class="w-full h-full bg-[#968080]"></div>
+              <div
+                style="--w: 10; --r: -0.5; --b: 2.65"
+                class="absolute h-full bg-[#968080] rotate-[216deg] adjust_width adjust_right adjust_bottom"
+              ></div>
+            </div>
+            <h3>NTU X PKU</h3>
+          </div>
+        </div>
       </div>
 
       <!--should be replaced by a rotated div-->
@@ -59,31 +108,73 @@
         id="arrow_container"
         class="flex absolute mx-auto justify-center items-center top-[608px] inset-x-0 z-20 adjust_gap adjust_top"
       >
-        <div
-          style="--w: 144"
-          id="box1"
-          class="aspect-9/4 bg-[#D9D9D9] rounded-[20px] adjust_width"
-        ></div>
+        <div id="box1" class="flex flex-col justify-center items-center">
+          <h3
+            style="--text: 48; --line: 58; --mb: 3"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
+          >
+            臺灣行
+          </h3>
+          <div
+            style="--g: 10"
+            class="flex w-full justify-center items-center adjust_gap"
+          >
+            <img
+              src="./image/totrip_btn.svg"
+              alt="to trip"
+              style="--w: 34; --mt: 7"
+              class="adjust_width adjust_marginT"
+            />
+            <h5
+              style="--text: 40; --line: 48"
+              class="font-thin text-[#968080] adjust_text"
+            >
+              0720
+            </h5>
+          </div>
+        </div>
         <div
           style="--w: 822"
           id="arrow"
           class="relative h-[0.5px] adjust_width"
         >
-          <div class="absolute w-full h-full left-0 bg-black"></div>
+          <div class="absolute w-full h-full left-0 bg-[#968080]"></div>
           <div
             style="--w: 64; --b: 13; --r: -3"
-            class="absolute h-full bg-black rotate-[-156deg] adjust_width adjust_bottom adjust_right"
+            class="absolute h-full bg-[#968080] rotate-[-156deg] adjust_width adjust_bottom adjust_right"
           ></div>
         </div>
-        <div
-          style="--w: 144"
-          id="box2"
-          class="aspect-9/4 bg-[#D9D9D9] rounded-[20px] adjust_width"
-        ></div>
+        <div id="box2" class="flex flex-col justify-center items-center">
+          <h3
+            style="--text: 48; --line: 58; --mb: 3"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
+          >
+            大陸行
+          </h3>
+          <div
+            style="--g: 10"
+            class="flex w-full justify-center items-center adjust_gap"
+          >
+            <img
+              src="./image/totrip_btn.svg"
+              alt="to trip"
+              style="--w: 34; --mt: 7"
+              class="adjust_width adjust_marginT"
+            />
+            <h5
+              style="--text: 40; --line: 48"
+              class="font-thin text-[#968080] adjust_text"
+            >
+              0801
+            </h5>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="flex flex-col w-full aspect-117/100 items-center bg-[#F3F3F3]">
+    <div
+      class="flex flex-col w-full aspect-117/100 items-center bg-[#F3F3F3] rounded-t-[20px]"
+    >
       <div
         style="--w: 1190; --h: 275; --mt: 80; --pl: 57; --pr: 64; --pt: 45"
         id="description_box"
@@ -98,8 +189,8 @@
           臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。營隊為期共十天，行程豐富精彩，文化探索與學術交流兼具，使學生汲取專業金融與管理領域知識的同時，也體驗多元而深刻的在地風情。
         </p>
         <button
-          style="--w: 154; --h: 50; --r: 15; --b: 15"
-          class="absolute text-2xl font-bold text-center text-white bg-[#53A1C9] rounded-[10px] adjust_width adjust_height adjust_right adjust_bottom"
+          style="--w: 154; --h: 50; --text: 24; --line: 24; --r: 15; --b: 15"
+          class="absolute font-bold text-center text-white bg-[#53A1C9] rounded-[10px] adjust_width adjust_height adjust_text adjust_right adjust_bottom"
           onclick="window.location.href = 'about.html'"
         >
           Read more
@@ -109,25 +200,32 @@
         style="--mt: 160"
         class="flex relative w-full justify-center items-center adjust_marginT"
       >
-        <div
+        <img
+          src="./image/left_arrow.svg"
+          alt="left arrow"
           style="--w: 109"
           id="left_arrow"
           class="absolute aspect-square left-3 bg-[#D9D9D9] rounded-full adjust_width z-10"
-        ></div>
+        />
         <div
           style="--g: 40"
           id="card-container"
           class="flex w-full overflow-x-scroll no-scrollbar adjust_gap z-0"
         ></div>
-        <div
+        <img
+          src="./image/right_arrow.svg"
+          alt="right arrow"
           style="--w: 109"
           id="right_arrow"
           class="absolute aspect-square right-3 bg-[#D9D9D9] rounded-full adjust_width z-10"
-        ></div>
+        />
       </div>
     </div>
 
-    <footer id="footer" class="relative bg-white text-[#968080]">
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
       <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
         <div class="mx-[2%] lg:mx-[3.3%]">
           <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
@@ -152,6 +250,12 @@
                   <li><a href="about.html" class="hover:underline">關於</a></li>
                   <li>
                     <a href="members.html" class="hover:underline">參與成員</a>
+                  </li>
+                  <li>
+                    <a href="taiwan.html" class="hover:underline">台灣行</a>
+                  </li>
+                  <li>
+                    <a href="china.html" class="hover:underline">大陸行</a>
                   </li>
                   <li>
                     <a href="mails.html" class="hover:underline">感謝信</a>
@@ -221,7 +325,7 @@
         src="./image/footer_logo.svg"
         alt="footer logo"
         style="--w: 208; --l: 30"
-        class="absolute bottom-0 adjust_width adjust_left"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
       />
     </footer>
 

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("../font/NotoSansTC-VariableFont_wght.woff2");
+  font-weight: 100 900;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -83,10 +89,30 @@
 }
 
 .card-compon2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: calc(324 / 1440 * 100vw);
   height: calc(67 / 1440 * 100vw);
+  padding: calc(19 / 1440 * 100vw);
+  border: 1px solid #968080;
   border-radius: 22px;
   background-color: white;
+}
+
+.card-compon2-titlebox {
+  display: flex;
+  align-items: center;
+  gap: calc(8 / 1440 * 100vw);
+  font-size: calc(32 / 1440 * 100vw);
+  line-height: calc(32 / 1440 * 100vw);
+  font-weight: 300;
+  color: #968080;
+}
+
+.card-compon2-img {
+  width: calc(40 / 1440 * 100vw);
+  aspect-ratio: 1/1;
 }
 
 .reveal_to_t {
@@ -336,4 +362,46 @@ nav li {
   100% {
     opacity: 1;
   }
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #968080;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
 }
