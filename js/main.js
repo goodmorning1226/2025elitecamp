@@ -119,3 +119,90 @@ if (thumbnail_to_l) {
     });
   });
 }
+
+const slides_container = document.getElementById("slides_container");
+if (slideshow) {
+  const taiwan = window.location.href.includes("taiwan");
+  const day = window.location.href[window.location.href.indexOf("day") + 3];
+  if (taiwan) {
+    if (day !== "5") {
+      for (let i = 1; i <= 9; ++i) {
+        let img = document.createElement("img");
+        img.src = `/image/trip/taiwan/day${day}/${i}.png`;
+        img.alt = "slide";
+        img.className = "object-cover";
+        slides_container.appendChild(img);
+      }
+    } else {
+    }
+  }
+}
+
+(function () {
+  // 允許多個獨立的 slideshow（用 data-slideshow 區分）
+  const sliders = document.querySelectorAll(".slideshow[data-slideshow]");
+
+  sliders.forEach((root) => {
+    const name = root.getAttribute("data-slideshow"); // 例如 "about"
+    const slidesTrack = root.querySelector(".slides");
+    const imgs = Array.from(root.querySelectorAll("img"));
+    const total = imgs.length;
+    let index = 0;
+    let timer = null;
+
+    // 建立對應的 dots 容器（可選）
+    const dotsHost = document.querySelector(
+      `.slideshow-dots[data-slideshow-dots="${name}"]`
+    );
+    let dots = [];
+    if (dotsHost) {
+      dotsHost.innerHTML = "";
+      dots = imgs.map((_, i) => {
+        const d = document.createElement("span");
+        d.className = "dot" + (i === 0 ? " active" : "");
+        d.addEventListener("click", () => goTo(i, true));
+        dotsHost.appendChild(d);
+        return d;
+      });
+    }
+
+    function update() {
+      slidesTrack.style.transform = `translateX(${-index * 100}%)`;
+      if (dots.length) {
+        dots.forEach((d, i) => d.classList.toggle("active", i === index));
+      }
+    }
+
+    function goTo(i, pause) {
+      index = (i + total) % total;
+      update();
+      if (pause) restart(); // 使用者操作後，重啟自動輪播
+    }
+
+    function next() {
+      goTo(index + 1);
+    }
+
+    function start() {
+      stop();
+      // 自動輪播：每 3 秒換一張（可自行調整）
+      timer = setInterval(next, 3000);
+    }
+    function stop() {
+      if (timer) clearInterval(timer);
+      timer = null;
+    }
+    function restart() {
+      stop();
+      start();
+    }
+
+    // 可選：滑鼠移入暫停、移出繼續
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", start);
+
+    // 初始化
+    update();
+    start();
+  });
+})();

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elite Camp</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+  </head>
+  <body style="font-family: 'Noto Sans TC'">
+    <div id="navbar" class="w-full h-[135px]">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="../../image/navbar_logo.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-[#968080]">
+          2025臺大北大菁英交流營
+        </h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col relative mt-[-36px] items-center bg-linear-to-b from-white from-75% to-[#FFF6E3] to-100% rounded-t-[20px] overflow-x-hidden z-10"
+    >
+      <img
+        src="../../image/mountain.svg"
+        alt="mountain"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
+      />
+      <div
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
+      >
+        <h3 style="--text: 48; --line: 48" class="font-bold adjust_text">
+          南投
+        </h3>
+        <h1
+          style="--text: 128; --line: 154; --mt: -8"
+          class="font-black adjust_text adjust_marginT"
+        >
+          第二天
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: 2"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          Second Day-Nantou
+        </h5>
+      </div>
+
+      <!-- Slideshow: 保持原本 image_width / adjust_radius / --radius 設定 -->
+      <div
+        style="--radius: 40"
+        id="slideshow"
+        class="image_width aspect-auto adjust_radius reveal_to_t slideshow overflow-hidden"
+        data-slideshow="about"
+      >
+        <div class="slider_mask">
+          <div id="slides_container" class="slides"></div>
+        </div>
+
+        <div
+          style="--mt: 20"
+          class="image_width slideshow-dots mx-auto adjust_marginT"
+          data-slideshow-dots="about"
+        ></div>
+      </div>
+      <div
+        style="--mt: 96"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginT reveal_to_t"
+      >
+        <div
+          style="--mb: 40"
+          class="flex flex-col w-full items-center adjust_marginB"
+        >
+          <h3
+            style="--mb: 16"
+            class="text-lg sm:text-5xl font-black adjust_marginB"
+          >
+            07/21
+          </h3>
+          <h2 class="text-lg sm:text-4xl font-bold">臺北 → 日月潭</h2>
+        </div>
+        今天早上起了個早，從臺大捷絲旅出發，搭上遊覽車，沿著國道一路南下。
+        <br />
+        <br />
+
+        車輛駛出臺北盆地，周圍的環境不斷變化，有些人悄然進入了夢鄉，有些人則和隔壁的夥伴相談甚歡，話題此起彼落間，經過一個個鄉鎮，來到了臺灣中部。
+        <br />
+        <br />
+        隨著蜿蜒的山路一路向上，道路兩旁的檳榔樹夾道歡迎，最終開闊的水面出現在眼前。
+        <br />
+        <br />
+        進入環湖公路，沿著湖畔所建築的公路綠意盎然，但今天的天色不是太好，車輛持續前行。
+        <br />
+        <br />
+        首先來到的是伊達邵部落，我們在此稍作休整並享用道地的午餐：像是竹筒飯、馬告香腸、竹筍雞湯等等。
+        <br />
+        接著來到碼頭，坐上規模不大的遊艇，隨著引擎的轟鳴聲朝向湖心進發。
+        <br />
+        <br />
+        平靜的湖面被遊艇劃出一道道波紋，些許的水花濺上船板，帶來一絲專屬於夏季的涼意。湖心的風景相較岸上更加的開闊，船隻經過拉魯島，也是整座日月潭的核心之處，在此感受到了邵族人對於傳統的重視與用心。
+        <br />
+        <br />
+        船隻在玄光碼頭稍作休息，眾人隨著石階拾級而上，來到玄光寺前。
+        <br />
+        <br />
+        此時回頭望去，大片的潭水伴隨著山嵐，恍惚間似乎來到了西湖。「水光瀲灧晴方好，山色空濛雨亦奇。」
+        <br />
+        日月潭也有著同樣的美景，眾人紛紛在此留影紀念，捕捉下轉瞬即逝的時時刻刻。
+        <br />
+        <br />
+        此處賣著燙手的「阿婆茶葉蛋」，滷汁的鹹香隨著裂縫深深滲入，配合紅茶的獨特香氣譜出了這樣獨特的小吃。
+        <br />
+        <br />
+        到遊艇上，引擎再度發動，並來到了遊艇的終點站水社碼頭。我們在此告別遊艇，換上另一種交通工具：「腳踏車」。
+        <br />
+        <br />
+        沿著木製的環湖自行車道前行，隨著雙腳的踩踏，一步步的品嚐日月潭之美。
+
+        <br />
+        <br />
+        但意外總來的猝不及防，天公並不作美，原先就朦朧的天空下起了雨，眾人紛紛停下腳步，撐起雨傘，五顏六色構築出了一條長長的彩色絲帶。
+        <br />
+        <br />
+        奈何雨勢實在太大，故眾人只好捨棄原先的行程，並掉頭回到水社還車。
+
+        <br />
+        <br />
+        還車後不久，導遊為我們送來了冰涼的紅茶，順口的滋味和雨水一同洗刷掉了心中的遺憾。
+        <br />
+        <br />
+        踏上遊覽車前往下個地點，路上雨勢逐漸增強，窗外的視線隨著雨絲有些模糊。來到「向山行政中心」，雨勢依舊磅礡，眾人順著屋簷來到行政中心的中央。由清水模打造的建築，配上後方的湖景，就像是精美的畫框與畫，一眼望去令人舒坦。
+        <br />
+        <br />
+        離開向山行政中心後，來到文武廟。此處主要信奉著三位神祇，分別為掌管文的孔子、掌管武的關公與岳飛。精美的雕塑爬滿文武廟的每個角落，此時回頭望去，細雨綿綿的天空與潭水相互承映，平時神祇欣賞的美景，今日我們也有機會能一覽。
+        <br />
+        <br />
+        再次回到伊達邵部落，將身上的行囊卸下，帶著輕裝走入巷弄中品嚐著道地美食，小米酒、紅茶蛋捲，並且也喝到了臺灣的代表飲品：「珍珠奶茶」。帶著食物，慢悠悠地在碼頭上散步，享受微涼的夏夜晚風，伴隨潭水的輕微聲響，美好的一天在此結束。
+      </div>
+      <div
+        class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"
+      ></div>
+    </div>
+
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="../../index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a href="../../index.html" class="hover:underline">首頁</a>
+                  </li>
+                  <li>
+                    <a href="../../about.html" class="hover:underline">關於</a>
+                  </li>
+                  <li>
+                    <a href="../../members.html" class="hover:underline"
+                      >參與成員</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../taiwan.html" class="hover:underline"
+                      >台灣行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../china.html" class="hover:underline"
+                      >大陸行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../mails.html" class="hover:underline"
+                      >感謝信</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

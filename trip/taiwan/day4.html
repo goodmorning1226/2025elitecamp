@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elite Camp</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+  </head>
+  <body style="font-family: 'Noto Sans TC'">
+    <div id="navbar" class="w-full h-[135px]">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="../../image/navbar_logo.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-[#968080]">
+          2025臺大北大菁英交流營
+        </h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col relative mt-[-36px] items-center bg-linear-to-b from-white from-75% to-[#FFF6E3] to-100% rounded-t-[20px] overflow-x-hidden z-10"
+    >
+      <img
+        src="../../image/mountain.svg"
+        alt="mountain"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
+      />
+      <div
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
+      >
+        <h3 style="--text: 48; --line: 48" class="font-bold adjust_text">
+          臺北
+        </h3>
+        <h1
+          style="--text: 128; --line: 154; --mt: -8"
+          class="font-black adjust_text adjust_marginT"
+        >
+          第四天
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: 2"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          Fourth Day -Taipei
+        </h5>
+      </div>
+
+      <!-- Slideshow: 保持原本 image_width / adjust_radius / --radius 設定 -->
+      <div
+        style="--radius: 40"
+        id="slideshow"
+        class="image_width aspect-auto adjust_radius reveal_to_t slideshow overflow-hidden"
+        data-slideshow="about"
+      >
+        <div class="slider_mask">
+          <div id="slides_container" class="slides"></div>
+        </div>
+
+        <div
+          style="--mt: 20"
+          class="image_width slideshow-dots mx-auto adjust_marginT"
+          data-slideshow-dots="about"
+        ></div>
+      </div>
+
+      <div
+        style="--mt: 96"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginT reveal_to_t"
+      >
+        <div
+          style="--mb: 40"
+          class="flex flex-col w-full items-center adjust_marginB"
+        >
+          <h3
+            style="--mb: 16"
+            class="text-lg sm:text-5xl font-black adjust_marginB"
+          >
+            07/23
+          </h3>
+          <h2 class="text-lg sm:text-4xl font-bold">
+            龜山島賞鯨 → 中信金參訪與晚宴 → 臺北夜遊
+          </h2>
+        </div>
+        陰晴不定的天氣為前幾天的旅途蒙上了一層濕漉漉的水氣,然而在要去賞鯨豚的今天,一掃幾日前的灰濛,出現了難得的好天氣。抵達烏石港,一行人穿好救生衣,興奮地坐在船身兩側,吹著微風欣賞湛藍的太平洋海景。
+        <br />
+        <br />
+        導覽員拿著麥克風,細心的為船上的大家介紹著龜山島的特殊地形景觀,不禁令人讚嘆這樣小的島嶼,藏著大自然的鬼斧神工。
+        <br />
+        <br />
+        與海豚打了一陣子招呼,也準備向他們道別。繞著龜山島航行回程,回程風浪不大,海面平緩,一夥人吹著海風打著盹。回到岸上,參訪團在烏石港的餐廳享用完新鮮美味的海鮮佳餚,再從東岸駛回臺北,準備開始下午最重要的企業參訪。
+        <br />
+        <br />
+        今天運氣不錯,不只遇上了大晴天,駛出外海後,船長便開始告知船上的每個人發現海豚的好消息。船艙中昏沉的同學們忽然來了精神,紛紛奔至船身兩側尋找海豚的蹤跡。成群的海豚躍出海面,估計有上百隻。有的華麗旋轉,有的在船邊嬉戲,甚至有的成年海豚帶者小海豚一同露面,像是在歡迎著我們的到來。同學們驚呼連連,紛紛拿出手機與相機捕捉這難
+        能可貴的瞬間。
+        <br />
+        <br />
+        本次參訪的企業為中國信託,中國信託致力於將金融與現代科技結合,發展出更便利的服務。在口頭介紹告一段落後,公司方也帶我們參觀了內部舒適的工作環境,接續又帶我們參訪了文薈館,館內陳列了中信金的歷史沿革,讓參訪團見識了這間歷史悠久的公司的誕生與蓬勃;而
+        168 STUDIO 的 AI
+        互動裝置也吸引了同學們的目光,體驗了許多小遊戲與互動服務,讓大家在輕鬆的氛圍下對於中信金的業務有更深入的了解。暮色漸濃,參訪團也和公司一起共進晚餐。
+        <br />
+        <br />
+        中信金為本次行程的主要贊助人,同學們於晚宴中輪流舉杯感謝師長與長官,在歡快的氛圍下,感謝所有師長與長官的協助,讓本次交流順利成行。
+        <br />
+        <br />
+        時光飛逝,很快來到旅途最後一個夜晚。同學們都想抓住美好時光的尾巴,不讓他溜走。大夥前往飯店附近的
+        KTV,在包廂中圍坐成一圈盡情高歌;有的則前往象山,將足跡遍布臺北街頭。歌聲與歡笑迴盪,旅途中最絢爛的一筆,被盡情揮灑在臺北的夜晚。
+      </div>
+      <div
+        class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"
+      ></div>
+    </div>
+
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="../../index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a href="../../index.html" class="hover:underline">首頁</a>
+                  </li>
+                  <li>
+                    <a href="../../about.html" class="hover:underline">關於</a>
+                  </li>
+                  <li>
+                    <a href="../../members.html" class="hover:underline"
+                      >參與成員</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../taiwan.html" class="hover:underline"
+                      >台灣行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../china.html" class="hover:underline"
+                      >大陸行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../mails.html" class="hover:underline"
+                      >感謝信</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

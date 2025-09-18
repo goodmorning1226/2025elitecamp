@@ -265,6 +265,7 @@ header {
   width: 100%;
   position: fixed;
 }
+
 .site-title {
   color: #fff;
   font-weight: bolder;
@@ -404,4 +405,51 @@ nav li {
 
 .ham4.active .bottom {
   stroke-dashoffset: -68px;
+}
+
+/* 讓圓角真正裁切到內部內容 */
+.slider_mask {
+  overflow: hidden;
+  border-radius: var(--radius, 0px);
+}
+
+/* 走馬燈本體 */
+.slideshow {
+  position: relative;
+}
+
+/* 橫向排列並平滑位移 */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* 每張圖寬度吃滿容器，高度自動；避免 inline-gap */
+.slides img {
+  width: 100%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* 指示點（點點）樣式 */
+.slideshow-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slideshow-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #bbb;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.slideshow-dots .dot.active {
+  background: #968080;
+  transform: scale(1.1);
 }
