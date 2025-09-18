@@ -155,10 +155,6 @@
   animation-fill-mode: forwards;
 }
 
-.text_box_shadow {
-  box-shadow: 0px 0px 20px 0.5px rgba(0, 0, 0, 0.1);
-}
-
 @media (max-width: 640px) {
   .image_width {
     width: 92%;
@@ -257,6 +253,10 @@
 
 .adjust_left {
   left: calc(var(--l) / 1440 * 100vw);
+}
+
+.adjust_radius {
+  border-radius: calc(var(--radius) / 1440 * 100vw);
 }
 
 header {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="no-scrollbar">
   <head>
     <meta charset="UTF-8" />
@@ -7,53 +7,124 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
-  <body style="overflow-x: hidden">
-    <div id="navbar" class="w-full h-20"></div>
+  <body
+    style="font-family: 'Noto Sans TC'; overflow-x: hidden"
+    class="relative overflow-x-hidden"
+  >
     <img
       src="./image/taiwan_banner.png"
       alt="banner"
       class="w-full h-auto trip_banner"
     />
+    <div class="absolute w-full top-0">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="./image/navbar_logo_white.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-white">2025臺大北大菁英交流營</h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
     <div
       id="taiwan_main"
-      class="flex flex-col w-full h-auto items-center bg-linear-to-b from-white from-54% to-[#FFF6E3] to-90%"
+      style="--mt: -40"
+      class="flex flex-col relative w-full h-auto items-center bg-linear-to-b from-white from-54% to-[#FFF6E3] to-90% rounded-t-[20px] adjust_marginT overflow-x-hidden"
     >
-      <h1
-        style="--text: 70; --line: 72; --my: 62"
-        class="font-extrabold text-center text-black adjust_text adjust_marginY reveal_to_t"
-      >
-        臺灣行
-      </h1>
+      <img
+        src="./image/mountain.svg"
+        alt="mountain"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
+      />
       <div
-        style="--h: 1483; --mb: 90"
-        class="relative w-full adjust_height adjust_marginB"
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
       >
+        <h1 style="--text: 128; --line: 154" class="font-black adjust_text">
+          臺灣行
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: -8"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          Journey to Taiwan
+        </h5>
+      </div>
+
+      <div style="--h: 1583" class="relative w-full adjust_height">
         <div
-          style="--h: 1483"
-          class="absolute w-[0.5px] sm:w-0.5 top-0 mx-auto inset-x-0 bg-black adjust_height"
+          style="
+            --h: 1500;
+            --mt: 85;
+            background: linear-gradient(
+              to bottom,
+              #fff6e3,
+              #fed7cc,
+              #fdc3be,
+              #b7a9dd,
+              #53a1c9
+            );
+            border: 1px solid #968080;
+          "
+          class="absolute w-0.5 sm:w-1 lg:w-2 top-0 mx-auto inset-x-0 adjust_height adjust_marginT"
         ></div>
         <div
-          style="--h: 76.5; --t: 1411; --l: 38"
-          class="absolute w-[0.5px] sm:w-0.5 bg-black rotate-[29deg] mx-auto right-0 adjust_height adjust_top adjust_left"
+          style="
+            --h: 76.5;
+            --t: 1512;
+            --l: 38;
+            background-color: #53a1c9;
+            border: 1px solid #968080;
+          "
+          class="absolute w-0.5 sm:w-1 lg:w-2 rotate-[29deg] mx-auto right-0 adjust_height adjust_top adjust_left"
         ></div>
 
         <div
-          style="--w: 30; --t: 84"
-          class="absolute aspect-square mx-auto inset-x-0 bg-black rounded-full adjust_width adjust_top"
+          style="
+            --w: 40;
+            --t: 84;
+            background-color: #fff6e3;
+            border: 1px solid #968080;
+          "
+          class="absolute aspect-square mx-auto inset-x-0 rounded-full adjust_width adjust_top"
         ></div>
         <div
-          style="--t: 84; --l: 807.75"
+          style="--t: 68; --l: 807.75"
           class="absolute w-fit adjust_top adjust_left reveal_to_l"
         >
           <h3
-            style="--text: 36; --line: 34; --mb: 18"
-            class="font-extrabold text-black adjust_text adjust_marginB"
+            style="--text: 48; --line: 58; --mb: 8"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
           >
-            第一天 臺北
+            第一天&nbsp;&nbsp;&nbsp;&nbsp;臺北
           </h3>
           <h5
-            style="--text: 24; --line: 32.2"
-            class="font-normal text-black adjust_text"
+            style="--text: 30; --line: 32.2"
+            class="font-light text-[#968080] adjust_text"
           >
             July 20, 2025
           </h5>
@@ -62,11 +133,14 @@
           style="--r: 807.75"
           class="absolute w-auto h-auto top-0 adjust_right reveal_to_r"
         >
-          <div class="relative w-auto h-auto thumbnail_to_r overflow-hidden">
+          <div
+            style="--radius: 40"
+            class="relative w-auto h-auto border-2 border-[#FFF6E3] adjust_radius thumbnail_to_r overflow-hidden"
+          >
             <img
               src="./image/trip/taiwan/day1/thumbnail.png"
               alt="day1_thumbnail"
-              style="--w: 507"
+              style="--w: 500"
               class="relative aspect-auto adjust_width z-0"
             />
             <div
@@ -84,35 +158,43 @@
         </div>
 
         <div
-          style="--w: 30; --t: calc(84 + 300)"
-          class="absolute aspect-square mx-auto inset-x-0 bg-black rounded-full adjust_width adjust_top"
+          style="
+            --w: 40;
+            --t: calc(84 + 325);
+            background-color: #fed7cc;
+            border: 1px solid #968080;
+          "
+          class="absolute aspect-square mx-auto inset-x-0 rounded-full adjust_width adjust_top"
         ></div>
         <div
-          style="--t: calc(84 + 300); --r: 807.75"
+          style="--t: 393; --r: 807.75"
           class="absolute w-fit adjust_top adjust_right reveal_to_r"
         >
           <h3
-            style="--text: 36; --line: 34; --mb: 18"
-            class="font-extrabold text-black adjust_text adjust_marginB"
+            style="--text: 48; --line: 58; --mb: 8"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
           >
-            第二天 南投
+            第二天&nbsp;&nbsp;&nbsp;&nbsp;南投
           </h3>
           <h5
-            style="--text: 24; --line: 32.2"
-            class="font-normal text-black adjust_text"
+            style="--text: 30; --line: 32.2"
+            class="font-light text-[#968080] text-right adjust_text"
           >
             July 21, 2025
           </h5>
         </div>
         <div
-          style="--t: 300; --l: 807.75"
+          style="--t: 325; --l: 807.75"
           class="absolute w-auto h-auto adjust_top adjust_left reveal_to_l"
         >
-          <div class="relative w-auto h-auto thumbnail_to_l overflow-hidden">
+          <div
+            style="--radius: 40"
+            class="relative w-auto h-auto border-2 border-[#FED7CC] adjust_radius thumbnail_to_l overflow-hidden"
+          >
             <img
               src="./image/trip/taiwan/day2/thumbnail.png"
               alt="day2_thumbnail"
-              style="--w: 507"
+              style="--w: 500"
               class="relative aspect-auto adjust_width z-0"
             />
             <div
@@ -130,35 +212,44 @@
         </div>
 
         <div
-          style="--w: 30; --t: calc(84 + 300 * 2)"
-          class="absolute aspect-square mx-auto inset-x-0 bg-black rounded-full adjust_width adjust_top"
+          style="
+            --w: 40;
+            --t: calc(84 + 325 * 2);
+            background-color: #fdc3be;
+            border: 1px solid #968080;
+          "
+          class="absolute aspect-square mx-auto inset-x-0 rounded-full adjust_width adjust_top"
         ></div>
         <div
-          style="--t: calc(84 + 300 * 2); --l: 807.75"
+          style="--t: 718; --l: 807.75"
           class="absolute w-fit adjust_top adjust_left reveal_to_l"
         >
           <h3
-            style="--text: 36; --line: 34; --mb: 18"
-            class="font-extrabold text-black adjust_text adjust_marginB"
+            style="--text: 48; --line: 58; --mb: 8"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
           >
-            第三天 南投--宜蘭
+            第三天&nbsp;&nbsp;&nbsp;&nbsp;南投—宜蘭
           </h3>
           <h5
-            style="--text: 24; --line: 32.2"
-            class="font-normal text-black adjust_text"
+            style="--text: 30; --line: 32.2"
+            class="font-light text-[#968080] adjust_text"
           >
             July 22, 2025
           </h5>
         </div>
+
         <div
-          style="--t: 600; --r: 807.75"
+          style="--t: 650; --r: 807.75"
           class="absolute w-auto h-auto adjust_top adjust_right reveal_to_r"
         >
-          <div class="relative w-auto h-auto thumbnail_to_r overflow-hidden">
+          <div
+            style="--radius: 40"
+            class="relative w-auto h-auto border-2 border-[#FDC3BE] adjust_radius thumbnail_to_r overflow-hidden"
+          >
             <img
               src="./image/trip/taiwan/day3/thumbnail.png"
               alt="day3_thumbnail"
-              style="--w: 507"
+              style="--w: 500"
               class="relative aspect-auto adjust_width z-0"
             />
             <div
@@ -169,42 +260,51 @@
                 style="--text: 44; --line: 34"
                 class="font-extrabold text-gray-600 adjust_text"
               >
-                第三天 南投--宜蘭
+                第三天　南投—宜蘭
               </h3>
             </div>
           </div>
         </div>
 
         <div
-          style="--w: 30; --t: calc(84 + 300 * 3)"
-          class="absolute aspect-square mx-auto inset-x-0 bg-black rounded-full adjust_width adjust_top"
+          style="
+            --w: 40;
+            --t: calc(84 + 325 * 3);
+            background-color: #b7a9dd;
+            border: 1px solid #968080;
+          "
+          class="absolute aspect-square mx-auto inset-x-0 rounded-full adjust_width adjust_top"
         ></div>
+
         <div
-          style="--t: calc(84 + 300 * 3); --r: 807.75"
+          style="--t: 1043; --r: 807.75"
           class="absolute w-fit adjust_top adjust_right reveal_to_r"
         >
           <h3
-            style="--text: 36; --line: 34; --mb: 18"
-            class="font-extrabold text-black adjust_text adjust_marginB"
+            style="--text: 48; --line: 58; --mb: 8"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
           >
-            第四天 宜蘭--臺北
+            第四天&nbsp;&nbsp;&nbsp;&nbsp;宜蘭—臺北
           </h3>
           <h5
-            style="--text: 24; --line: 32.2"
-            class="font-normal text-black adjust_text"
+            style="--text: 30; --line: 32.2"
+            class="font-light text-[#968080] text-right adjust_text"
           >
             July 23, 2025
           </h5>
         </div>
         <div
-          style="--t: 900; --l: 807.75"
+          style="--t: 975; --l: 807.75"
           class="absolute w-auto h-auto adjust_top adjust_left reveal_to_l"
         >
-          <div class="relative w-auto h-auto thumbnail_to_l overflow-hidden">
+          <div
+            style="--radius: 40"
+            class="relative w-auto h-auto border-2 border-[#B7A9DD] adjust_radius thumbnail_to_l overflow-hidden"
+          >
             <img
               src="./image/trip/taiwan/day4/thumbnail.png"
               alt="day4_thumbnail"
-              style="--w: 507"
+              style="--w: 500"
               class="relative aspect-auto adjust_width z-0"
             />
             <div
@@ -215,42 +315,50 @@
                 style="--text: 44; --line: 34"
                 class="font-extrabold text-gray-600 adjust_text"
               >
-                第四天 宜蘭--臺北
+                第四天　宜蘭—臺北
               </h3>
             </div>
           </div>
         </div>
 
         <div
-          style="--w: 30; --t: calc(84 + 300 * 4)"
-          class="absolute aspect-square mx-auto inset-x-0 bg-black rounded-full adjust_width adjust_top"
+          style="
+            --w: 40;
+            --t: calc(84 + 325 * 4);
+            background-color: #53a1c9;
+            border: 1px solid #968080;
+          "
+          class="absolute aspect-square mx-auto inset-x-0 rounded-full adjust_width adjust_top"
         ></div>
         <div
-          style="--t: calc(84 + 300 * 4); --l: 807.75"
+          style="--t: 1368; --l: 807.75"
           class="absolute w-fit adjust_top adjust_left reveal_to_l"
         >
           <h3
-            style="--text: 36; --line: 34; --mb: 18"
-            class="font-extrabold text-black adjust_text adjust_marginB"
+            style="--text: 48; --line: 58; --mb: 8"
+            class="font-bold text-[#968080] adjust_text adjust_marginB"
           >
-            第五天 桃園
+            第五天&nbsp;&nbsp;&nbsp;&nbsp;臺北
           </h3>
           <h5
-            style="--text: 24; --line: 32.2"
-            class="font-normal text-black adjust_text"
+            style="--text: 30; --line: 32.2"
+            class="font-light text-[#968080] adjust_text"
           >
             July 24, 2025
           </h5>
         </div>
         <div
-          style="--t: 1200; --r: 807.75"
+          style="--t: 1300; --r: 807.75"
           class="absolute w-auto h-auto adjust_top adjust_right reveal_to_r"
         >
-          <div class="relative w-auto h-auto thumbnail_to_r overflow-hidden">
+          <div
+            style="--radius: 40"
+            class="relative w-auto h-auto border-2 border-[#53A1C9] adjust_radius thumbnail_to_r overflow-hidden"
+          >
             <img
               src="./image/trip/taiwan/day5/thumbnail.png"
               alt="day5_thumbnail"
-              style="--w: 507"
+              style="--w: 500"
               class="relative aspect-auto adjust_width z-0"
             />
             <div
@@ -261,15 +369,124 @@
                 style="--text: 44; --line: 34"
                 class="font-extrabold text-gray-600 adjust_text"
               >
-                第五天 桃園
+                第五天　臺北
               </h3>
             </div>
           </div>
         </div>
       </div>
+      <div
+        style="--w: 50; --my: 72"
+        class="aspect-square mx-auto border-[0.5px] border-[#968080] rounded-full adjust_width adjust_marginY"
+      ></div>
     </div>
 
-    <footer class="w-full h-56 bg-white"></footer>
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li><a href="index.html" class="hover:underline">首頁</a></li>
+                  <li><a href="about.html" class="hover:underline">關於</a></li>
+                  <li>
+                    <a href="members.html" class="hover:underline">參與成員</a>
+                  </li>
+                  <li>
+                    <a href="taiwan.html" class="hover:underline">台灣行</a>
+                  </li>
+                  <li>
+                    <a href="china.html" class="hover:underline">大陸行</a>
+                  </li>
+                  <li>
+                    <a href="mails.html" class="hover:underline">感謝信</a>
+                  </li>
+                  <li>
+                    <a href="publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
 
     <script src="./js/main.js"></script>
   </body>

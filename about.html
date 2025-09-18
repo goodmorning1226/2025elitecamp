@@ -7,25 +7,72 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
-  <body style="overflow-x: hidden">
-    <div id="navbar" class="w-full h-20"></div>
-    <div
-      class="flex flex-col items-center bg-linear-to-b from-white from-54% to-[#FFF6E3] to-90%"
-    >
-      <h1
-        style="--text: 48; --line: 34; --my: 80"
-        class="font-semibold text-[28px]/[32px] sm:text-[48px]/[34px] adjust_marginY reveal_to_t"
+  <body style="font-family: 'Noto Sans TC'; overflow-x: hidden">
+    <img
+      src="./image/about_banner.png"
+      alt="banner"
+      class="relative w-full h-auto trip_banner z-0"
+    />
+    <div class="absolute w-full top-0">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
       >
-        關於狀元營
-      </h1>
+        <img
+          src="./image/navbar_logo_white.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-white">2025臺大北大菁英交流營</h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="--mt: -40"
+      class="flex flex-col relative items-center bg-linear-to-b from-white from-54% to-[#FFF6E3] to-90% rounded-t-[20px] adjust_marginT overflow-x-hidden z-10"
+    >
+      <div
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
+      >
+        <h1 style="--text: 128; --line: 154" class="font-black adjust_text">
+          關於狀元營
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: -8"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          About the Elite Camp
+        </h5>
+      </div>
       <img
         src="./image/about.png"
         alt="about"
-        class="image_width aspect-auto reveal_to_t"
+        style="--radius: 40"
+        class="image_width aspect-auto adjust_radius reveal_to_t"
       />
       <div
-        style="--mt: 123; --mb: 100; --px: 27; --pt: 13; --pb: 21"
-        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-light bg-white text_box_shadow adjust_marginT adjust_marginB adjust_paddingX adjust_paddingT adjust_paddingB reveal_to_t"
+        style="--mt: 123"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginT reveal_to_t"
       >
         臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流,於暑期共同舉辦兩岸暑期青年參訪團,又稱狀元營,迄今已二十餘載,今年邁入第廿一年。營隊為期十天,行程豐富精彩,文化探索與學術交流兼具,使學生汲取專業金融與管理領域知識的同時,也體驗多元而深刻的在地風情。
         <br />
@@ -48,8 +95,118 @@
         <br />
         今夏,參訪團的足跡遍及城市,豐富而深刻的回憶不僅刻劃於街頭巷尾,更銘刻於每位成員的心中,成為兩校未來持續交流的動力。
       </div>
+
+      <div
+        class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"
+      ></div>
     </div>
-    <footer class="w-full h-56 bg-white"></footer>
+
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li><a href="index.html" class="hover:underline">首頁</a></li>
+                  <li><a href="about.html" class="hover:underline">關於</a></li>
+                  <li>
+                    <a href="members.html" class="hover:underline">參與成員</a>
+                  </li>
+                  <li>
+                    <a href="taiwan.html" class="hover:underline">台灣行</a>
+                  </li>
+                  <li>
+                    <a href="china.html" class="hover:underline">大陸行</a>
+                  </li>
+                  <li>
+                    <a href="mails.html" class="hover:underline">感謝信</a>
+                  </li>
+                  <li>
+                    <a href="publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
