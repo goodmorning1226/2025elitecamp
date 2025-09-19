@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/tailwind.css" />
   </head>
-  <body style="font-family: 'Noto Sans TC'">
+  <body style="font-family: 'Noto Sans TC'; overflow-x: hidden">
     <div id="navbar" class="w-full h-[135px]">
       <div
         class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
@@ -21,9 +21,10 @@
           2025臺大北大菁英交流營
         </h3>
         <div
-          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full cursor-pointer"
         >
           <svg
+            id="hamburger"
             class="ham hamRotate ham4 w-12"
             viewBox="0 0 100 100"
             width="80"
@@ -40,6 +41,143 @@
             />
           </svg>
         </div>
+
+        <div
+          id="mobileMenu"
+          class="grid grid-rows-8 absolute w-[188.8px] sm:w-[236px] pt-[24px] sm:pt-[30px] pb-[29.6px] sm:pb-[37px] pl-[32px] sm:pl-[40px] gap-[16.8px] sm:gap-[21px] top-[99px] right-0 border-l-2 border-b-2 border-[#968080] bg-white items-center rounded-bl-[40px] z-50 overflow-hidden transform translate-x-full opacity-0 transition-all duration-300 ease-out"
+        >
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#968080] items-center hover:bg-[#968080]/40 transition-all duration-200 ease-in active:bg-[#968080]/80 cursor-pointer"
+            onclick="window.location.href = '/index.html'"
+          >
+            <img
+              src="/image/icon/home.svg"
+              alt="home"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              首頁
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FFF6E3] items-center hover:bg-[#FFF6E3]/40 active:bg-[#FFF6E3]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/about.html'"
+          >
+            <img
+              src="/image/icon/about.svg"
+              alt="about"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              關於
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FED7CC] items-center hover:bg-[#FED7CC]/40 active:bg-[#FED7CC]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/members.html'"
+          >
+            <img
+              src="/image/icon/members.svg"
+              alt="members"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              參與成員
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/taiwan.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              臺灣行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/china.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              大陸行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#B7A9DD] items-center hover:bg-[#B7A9DD]/40 active:bg-[#B7A9DD]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/mails.html'"
+          >
+            <img
+              src="/image/icon/mails.svg"
+              alt="mails"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              感謝信
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#97A6D6] items-center hover:bg-[#97A6D6]/40 active:bg-[#97A6D6]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/publications.html'"
+          >
+            <img
+              src="/image/icon/publications.svg"
+              alt="publications"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              狀元出品
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#53A1C9] items-center hover:bg-[#53A1C9]/40 active:bg-[#53A1C9]/80 transition-all duration-200 ease-in cursor-pointer"
+          >
+            <img
+              src="/image/icon/album.svg"
+              alt="album"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              照片集
+            </h3>
+          </div>
+        </div>
+
+        <div
+          id="backdrop"
+          class="fixed inset-0 bg-black/30 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+        ></div>
       </div>
     </div>
     <div
