@@ -121,7 +121,7 @@ if (thumbnail_to_l) {
 }
 
 const slides_container = document.getElementById("slides_container");
-if (slideshow) {
+if (slides_container) {
   const taiwan = window.location.href.includes("taiwan");
   const day = window.location.href[window.location.href.indexOf("day") + 3];
   if (taiwan) {
@@ -134,6 +134,13 @@ if (slideshow) {
         slides_container.appendChild(img);
       }
     } else {
+      for (let i = 1; i <= 4; ++i) {
+        let img = document.createElement("img");
+        img.src = `/image/trip/taiwan/day${day}/${i}.png`;
+        img.alt = "slide";
+        img.className = "object-cover";
+        slides_container.appendChild(img);
+      }
     }
   }
 }
@@ -204,5 +211,59 @@ if (slideshow) {
     // 初始化
     update();
     start();
+  });
+})();
+
+(function () {
+  const ham = document.getElementById("hamburger");
+  const menu = document.getElementById("mobileMenu");
+  const backdrop = document.getElementById("backdrop");
+
+  if (!ham || !menu) return;
+
+  function openMenu() {
+    ham.classList.add("active");
+    ham.setAttribute("aria-expanded", "true");
+
+    // 面板：從右側滑入 + 淡入
+    menu.classList.remove("translate-x-full", "opacity-0");
+    menu.classList.add("translate-x-0", "opacity-100");
+
+    // 遮罩：淡入並可點擊
+    if (backdrop) {
+      backdrop.classList.remove("pointer-events-none");
+      backdrop.classList.add("opacity-100");
+    }
+  }
+
+  function closeMenu() {
+    ham.classList.remove("active");
+    ham.setAttribute("aria-expanded", "false");
+
+    // 面板：滑出 + 淡出
+    menu.classList.add("translate-x-full", "opacity-0");
+    menu.classList.remove("translate-x-0", "opacity-100");
+
+    // 遮罩：淡出與禁用點擊
+    if (backdrop) {
+      backdrop.classList.add("pointer-events-none");
+      backdrop.classList.remove("opacity-100");
+    }
+  }
+
+  function isOpen() {
+    return menu.classList.contains("translate-x-0");
+  }
+
+  function toggleMenu() {
+    isOpen() ? closeMenu() : openMenu();
+  }
+
+  ham.addEventListener("click", toggleMenu);
+  backdrop?.addEventListener("click", closeMenu);
+
+  // 可選：ESC 關閉
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && isOpen()) closeMenu();
   });
 })();

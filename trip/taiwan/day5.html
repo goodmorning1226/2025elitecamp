@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elite Camp</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+  </head>
+  <body style="font-family: 'Noto Sans TC'">
+    <div id="navbar" class="w-full h-[135px]">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="../../image/navbar_logo.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-[#968080]">
+          2025臺大北大菁英交流營
+        </h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+        >
+          <svg
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col relative mt-[-36px] items-center bg-linear-to-b from-white from-75% to-[#FFF6E3] to-100% rounded-t-[20px] overflow-hidden z-10"
+    >
+      <img
+        src="../../image/mountain.svg"
+        alt="mountain"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
+      />
+      <div
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
+      >
+        <h3 style="--text: 48; --line: 48" class="font-bold adjust_text">
+          臺北
+        </h3>
+        <h1
+          style="--text: 128; --line: 154; --mt: -8"
+          class="font-black adjust_text adjust_marginT"
+        >
+          第五天
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: 2"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          Fifth Day - Taipei
+        </h5>
+      </div>
+
+      <!-- Slideshow: 保持原本 image_width / adjust_radius / --radius 設定 -->
+      <div
+        style="--radius: 40"
+        id="slideshow"
+        class="image_width aspect-auto adjust_radius reveal_to_t slideshow overflow-hidden"
+        data-slideshow="about"
+      >
+        <div class="slider_mask">
+          <div id="slides_container" class="slides"></div>
+        </div>
+
+        <div
+          style="--mt: 20"
+          class="image_width slideshow-dots mx-auto adjust_marginT"
+          data-slideshow-dots="about"
+        ></div>
+      </div>
+
+      <div
+        style="--mt: 96"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginT reveal_to_t"
+      >
+        <div
+          style="--mb: 40"
+          class="flex flex-col w-full items-center adjust_marginB"
+        >
+          <h3
+            style="--mb: 16"
+            class="text-lg sm:text-5xl font-black adjust_marginB"
+          >
+            07/24
+          </h3>
+          <h2 class="text-lg sm:text-4xl font-bold">臺灣大學 → 桃園機場送別</h2>
+        </div>
+        臺灣大學自1928年創校,以自由主義學風著稱,並以「敦品勵學,愛國愛人」的校訓孕育臺大人的特質。透過臺大學生帶領的校園導覽活動,不僅使北大學生對美麗的校園有了深刻的印象,更為狀元營的臺灣行畫下了完美的句號。
+        <br />
+        <br />
+        不知不覺中,這趟精彩又充實的臺灣行也悄然來到了尾聲。清晨,陽光灑落在捷絲旅的窗邊,夥伴們一邊享用著豐盛的早餐,一邊默默感受著這趟旅程即將告一段落的氛圍。餐桌間的交談依舊熱絡,但眼神裡早已透出些許離別前的珍惜。
+        <br />
+        <br />
+        早餐過後,我們搭車來到臺灣大學,展開這趟特別為北大參訪團安排的校園導覽活動。四個小組分頭出發,穿梭於臺大校園的各個角落——從氣派典雅的校史館、知識殿堂般的總圖書館,到象徵時間與勉勵的傅鐘,無不讓人感受到臺大深厚的歷史與學術氛圍。
+        <br />
+        <br />
+        這次導覽可不只是走馬看花!活動還加入了「拍照競賽」的小巧思:各組需在欣賞校園風光的同時,小心不被其他小組拍到身影,否則將會被扣分。這項趣味規則讓整個導覽過程增添了幾分緊張刺激與歡笑,大家一邊努力尋找目標地點,一邊還要東躲西藏,讓原本靜謐的校園頓時充滿青春的氣息。在傅鐘前,大家駐足聆聽傅斯年校長的生平事蹟與校訓精神。對北大的同學們來說,這不僅是一段臺大的歷史,更是一種跨校、跨文化的精神交流與激勵。而走進校史館,我們也一起見證了臺灣大學從創校到今日的輝煌歷程,深刻體會到這所學府的時代意義。
+        <br />
+        <br />
+        時光倏忽流轉,轉眼便到了前往機場的時刻。一行人依依不捨地排隊上車。過去幾天朝夕相處、歡笑不斷的兩岸師生,此刻即將面對短暫的分離。遊覽車抵達機場,拖著行李、穿梭往來的旅客與我們擦肩而過,大家紛紛拿出手機,急切地與身旁夥伴合影留念,希望為這段短暫卻深刻的旅程,留下最珍貴的紀錄。
+        <br />
+        <br />
+        臺大同學們一早便準備好的卡片與禮物,此刻終於有了最溫暖的歸屬。他們一一將手中的小物交到北大夥伴手中,雖然禮物不重,卻承載著滿滿的心意與感激。有人眼眶泛紅,有人互相擁抱,嘴上說著再見不遠,心裡卻清楚,這一別,情感早已悄悄萌芽,讓再見變得格外不捨。
+        <br />
+        <br />
+        即將分開的時刻終於來臨,兩岸師生站在出境通道前,彼此擁抱道別,揮舞雙手大喊:「成都見,三天後見!」彷彿要用這樣的聲音把情感拉得更近一點。最終,那些熟悉的身影,一一走入人海中,漸行漸遠,
+        留下站在原地目送的身影久久未散。
+        <br />
+        <br />
+        臺灣行,至此劃下圓滿的句點——不只是旅程的終章,更是一段情誼的濃縮與見證;而接下來的大陸行,則即將揭開全新而精彩的篇章,等待著大家一起書寫。
+        <br />
+        <br />
+        在返回臺大的路上,車內的氣氛變得輕鬆,導遊幽默而耐心地說明著即將前往成都的注意事項與小提醒,也讓心情逐漸從離別的哀愁轉向對未來的期待。臺大同學們一邊回想著與北大夥伴們共度的歡樂時光,一邊悄悄在心裡倒數。三天之後,我們又能重聚,再次相逢於成都的陽光之下。
+        <br />
+        <br />
+        這不僅是一段旅程的中場休息,更是一份情誼的延續與升華。這場兩岸交流的篇章,還遠遠沒有結束。
+      </div>
+      <div
+        class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"
+      ></div>
+    </div>
+
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="../../index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a href="../../index.html" class="hover:underline">首頁</a>
+                  </li>
+                  <li>
+                    <a href="../../about.html" class="hover:underline">關於</a>
+                  </li>
+                  <li>
+                    <a href="../../members.html" class="hover:underline"
+                      >參與成員</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../taiwan.html" class="hover:underline"
+                      >台灣行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../china.html" class="hover:underline"
+                      >大陸行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../mails.html" class="hover:underline"
+                      >感謝信</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

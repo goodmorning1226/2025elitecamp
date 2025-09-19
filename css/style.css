@@ -207,6 +207,10 @@
   margin-bottom: calc(var(--mb) / 1440 * 100vw);
 }
 
+.adjust_marginL {
+  margin-left: calc(var(--ml) / 1440 * 100vw);
+}
+
 .adjust_marginX {
   margin-inline: calc(var(--mx) / 1440 * 100vw);
 }
@@ -452,4 +456,15 @@ nav li {
 .slideshow-dots .dot.active {
   background: #968080;
   transform: scale(1.1);
+}
+
+.member_selector {
+  width: calc(215 / 1440 * 100vw);
+  transition: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.member_selector:hover {
+  width: 100%;
 }
