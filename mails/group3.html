@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden" class="no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Elite Camp</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/tailwind.css" />
+  </head>
+  <body style="font-family: 'Noto Sans TC'; overflow-x: hidden">
+    <div id="navbar" class="w-full h-[135px]">
+      <div
+        class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
+      >
+        <img
+          src="../../image/navbar_logo.svg"
+          alt="navbar logo"
+          class="absolute top-0 inset-x-0 mx-auto"
+        />
+        <h3 class="text-xl sm:text-2xl text-[#968080]">
+          2025臺大北大菁英交流營
+        </h3>
+        <div
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full cursor-pointer"
+        >
+          <svg
+            id="hamburger"
+            class="ham hamRotate ham4 w-12"
+            viewBox="0 0 100 100"
+            width="80"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+            />
+          </svg>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="grid grid-rows-8 absolute w-[188.8px] sm:w-[236px] pt-[24px] sm:pt-[30px] pb-[29.6px] sm:pb-[37px] pl-[32px] sm:pl-[40px] gap-[16.8px] sm:gap-[21px] top-[99px] right-0 border-l-2 border-b-2 border-[#968080] bg-white items-center rounded-bl-[40px] z-50 overflow-hidden transform translate-x-full opacity-0 transition-all duration-300 ease-out"
+        >
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#968080] items-center hover:bg-[#968080]/40 transition-all duration-200 ease-in active:bg-[#968080]/80 cursor-pointer"
+            onclick="window.location.href = '/index.html'"
+          >
+            <img
+              src="/image/icon/home.svg"
+              alt="home"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              首頁
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FFF6E3] items-center hover:bg-[#FFF6E3]/40 active:bg-[#FFF6E3]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/about.html'"
+          >
+            <img
+              src="/image/icon/about.svg"
+              alt="about"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              關於
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FED7CC] items-center hover:bg-[#FED7CC]/40 active:bg-[#FED7CC]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/members.html'"
+          >
+            <img
+              src="/image/icon/members.svg"
+              alt="members"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              參與成員
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/taiwan.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              臺灣行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/china.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              大陸行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#B7A9DD] items-center hover:bg-[#B7A9DD]/40 active:bg-[#B7A9DD]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/mails.html'"
+          >
+            <img
+              src="/image/icon/mails.svg"
+              alt="mails"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              感謝信
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#97A6D6] items-center hover:bg-[#97A6D6]/40 active:bg-[#97A6D6]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/publications.html'"
+          >
+            <img
+              src="/image/icon/publications.svg"
+              alt="publications"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              狀元出品
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#53A1C9] items-center hover:bg-[#53A1C9]/40 active:bg-[#53A1C9]/80 transition-all duration-200 ease-in cursor-pointer"
+          >
+            <img
+              src="/image/icon/album.svg"
+              alt="album"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              照片集
+            </h3>
+          </div>
+        </div>
+
+        <div
+          id="backdrop"
+          class="fixed inset-0 bg-black/30 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+        ></div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col relative mt-[-36px] items-center bg-linear-to-b from-white from-75% to-[#FFF6E3] to-100% rounded-t-[20px] overflow-hidden z-10"
+    >
+      <img
+        src="/image/mountain.svg"
+        alt="mountain"
+        style="--t: 88"
+        class="absolute w-full h-auto z-0 adjust_top"
+      />
+      <div
+        style="--mt: 96; --mb: 88"
+        class="flex flex-col items-center text-center text-[#968080] adjust_marginT adjust_marginB reveal_to_t"
+      >
+        <h1
+          style="--text: 128; --line: 154; --mt: -8"
+          class="font-black adjust_text adjust_marginT"
+        >
+          第三組感謝信
+        </h1>
+        <h5
+          style="--text: 28; --line: 34; --mt: 2"
+          class="font-thin adjust_text adjust_marginT"
+        >
+          Appreciation Letter - Group 3
+        </h5>
+      </div>
+
+      <div
+        style="--mb: 90"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginB reveal_to_t"
+      >
+        敬愛的辜仲諒先生：
+        <br />
+        <br />
+        　　盛夏的熱風，像是翻開故事的序章，把原本在不同城市生活的我們，推向同一條路。因為有您的支持，這段旅程不再只是地圖上的一條線，而成為一串真實的足跡，串起風景、人情與心意。
+        <br />
+        <br />
+        　　在臺灣段的起點，我們迎接來自對岸的朋友。那天的陽光很亮，我們在校園裡穿梭，從臺大綠蔭的林蔭道走到熱鬧的公館街口，一邊說著故事，一邊觀察對方驚喜的神情。日月潭的清晨，湖面靜得像一面鏡子，單車滑過橋面，微風迎面撲來，伴著湖光山色，讓我們第一次感覺到「分享」原來不只是介紹景點，更是把自己珍視的日常送到對方手裡。九份的雨絲細密，老街的燈籠映著溫黃的光，我們躲進茶館，交換著各自城市的味道與回憶。十分的夜空下，天燈緩緩升起，那一刻的沉默裡，我們都在心中默默許下願望——有些是對未來的期待，有些是對當下的感謝。龜山島的海上，鯨豚意外現身，水花在陽光下閃爍，像是旅程給我們的小小祝福。
+        <br />
+        <br />
+        　　轉場到四川，氣溫升高，步伐卻更輕快。樂山大佛的神情沉靜而慈悲，似乎在注視我們匆忙又真誠的青春；峨眉山雲霧如絲，纏在肩頭，我們彼此提醒小心腳步，也在金頂的高處互相拍下最自然的笑容。茶園裡，茶葉在指尖綻開淡淡清香，像是我們的友情——起初陌生、青澀，但很快在陽光與時間裡慢慢舒展。熊貓基地的清晨，毛茸茸的身影在草地上翻滾，讓再怎麼沉穩的人也忍不住露出笑容。成都的火鍋熱辣香麻，街頭的串串香氣與人聲交織，晚風裡的笑鬧聲延續到深夜，我們在不同話題間游走，從課業聊到夢想，從生活聊到未來的方向。
+        <br />
+        <br />
+        　　這些天的行程，既緊湊又充滿餘韻。我們不只是同桌共食、同行看景，更在一次次交流中，學會傾聽與理解。對岸的同齡人和我們一樣，有憧憬、有焦慮、有對世界的疑問；而我們在分享彼此的同時，也看見了自己不曾留意的一面。那份感受，比風景更深刻，也比照片更長久。
+        <br />
+        <br />
+        　　辜先生，若沒有您的遠見與慷慨，這趟跨越海峽的交流或許只會停留在想像中。您的支持，讓我們在真實的土地上行走，去觸摸彼此的文化，去發現相似與差異，去建立一段段不因距離而消散的情誼。
+        <br />
+        <br />
+        　　旅程總有終點，但故事不會。當我們回到原本的生活，這段記憶仍會像書籤一樣，靜靜夾在青春的篇章裡，提醒我們曾在這個盛夏並肩前行。未來，無論我們走向哪個地方，都會記得這段被照亮的時光，並努力把這份溫度傳遞給更多人。
+        <br />
+        <br />
+        謹以此信，獻上最深的感謝與祝福。
+        <br />
+        <br />
+        <br />
+
+        第二十一屆狀元營 臺灣大學第三組
+        <br />
+        財務金融學系 曾稚甯
+        <br />
+        財務金融學系 謝清槐
+        <br />
+        工商管理學系 歐庭芳
+        <br />
+        資訊管理學系 宋宇倫
+        <br />
+        會計學系 謝宜臻
+        <br />
+        敬上
+      </div>
+
+      <img
+        src="/image/mails/group3/content.png"
+        alt="mails content"
+        style="--radius: 40"
+        class="image_width aspect-auto adjust_radius reveal_to_t"
+      />
+      <div
+        class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"
+      ></div>
+    </div>
+
+    <footer
+      id="footer"
+      class="relative w-full max-w-full bg-white text-[#968080] overflow-x-hidden"
+    >
+      <div class="pt-10 sm:pt-11 pb-6 sm:pb-10">
+        <div class="mx-[2%] lg:mx-[3.3%]">
+          <div class="grid gap-8 sm:gap-28 md:grid-cols-12">
+            <div class="md:col-span-12 lg:col-span-5">
+              <a href="../../index.html" class="flex items-center mb-4">
+                <span class="text-3xl lg:text-[48px]/[58px] font-black"
+                  >第21屆臺大北大狀元營</span
+                >
+              </a>
+              <p class="text-sm lg:text-[20px]/[24px] leading-relaxed">
+                臺大管理學院與北京大學光華管理學院為促進兩岸學術及文化交流，於暑期共同舉辦兩岸暑期青年參訪團，又稱狀元營，迄今已二十餘載，今年邁入第廿一年。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-12 md:contents mb-8">
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  本站連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a href="../../index.html" class="hover:underline">首頁</a>
+                  </li>
+                  <li>
+                    <a href="../../about.html" class="hover:underline">關於</a>
+                  </li>
+                  <li>
+                    <a href="../../members.html" class="hover:underline"
+                      >參與成員</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../taiwan.html" class="hover:underline"
+                      >台灣行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../china.html" class="hover:underline"
+                      >大陸行</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../mails.html" class="hover:underline"
+                      >感謝信</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../../publications.html" class="hover:underline"
+                      >狀元出品</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://elitecamp.management.ntu.edu.tw/gallery/#(grid|album)=/2024;"
+                      class="hover:underline"
+                      >照片集</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-span-1 md:col-span-6 lg:col-span-2">
+                <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                  相關連結
+                </h4>
+                <ul class="space-y-2 text-sm lg:text-base">
+                  <li>
+                    <a
+                      href="https://management.ntu.edu.tw/"
+                      class="hover:underline text-nowrap"
+                      >國立臺灣大學管理學院</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://elitecamp.management.ntu.edu.tw/"
+                      class="hover:underline"
+                      >歷屆狀元營網站</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="md:col-span-12 lg:col-span-3 text-center md:text-left">
+              <h4 class="text-base lg:text-[24px]/[28px] font-bold mb-3">
+                聯絡我們
+              </h4>
+              <p class="text-sm lg:text-base">國立臺灣大學管理學院</p>
+              <p class="text-sm lg:text-base mb-6 lg:mb-8">
+                臺北市羅斯福路四段一號
+              </p>
+              <p class="mt-4 text-sm lg:text-base">
+                <strong>電話：</strong> <span>+886-2-33661000</span>
+              </p>
+              <p class="text-sm lg:text-base">
+                <strong>Email:</strong>
+                <a href="mailto:manage@ntu.edu.tw" class="underline"
+                  >manage@ntu.edu.tw</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/image/footer_logo.svg"
+        alt="footer logo"
+        style="--w: 208; --l: 30"
+        class="hidden sm:block absolute bottom-0 adjust_width adjust_left"
+      />
+    </footer>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

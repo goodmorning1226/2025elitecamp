@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-scrollbar">
+<html lang="en" style="overflow-x: hidden" class="no-scrollbar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/tailwind.css" />
   </head>
-  <body style="font-family: 'Noto Sans TC'">
+  <body style="font-family: 'Noto Sans TC'; overflow-x: hidden">
     <div id="navbar" class="w-full h-[135px]">
       <div
         class="flex relative w-full h-[99px] justify-between items-center px-6 sm:px-11"
@@ -21,9 +21,10 @@
           2025臺大北大菁英交流營
         </h3>
         <div
-          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full"
+          class="flex w-12 sm:w-[52px] aspect-square justify-center items-center bg-white rounded-full cursor-pointer"
         >
           <svg
+            id="hamburger"
             class="ham hamRotate ham4 w-12"
             viewBox="0 0 100 100"
             width="80"
@@ -40,13 +41,150 @@
             />
           </svg>
         </div>
+
+        <div
+          id="mobileMenu"
+          class="grid grid-rows-8 absolute w-[188.8px] sm:w-[236px] pt-[24px] sm:pt-[30px] pb-[29.6px] sm:pb-[37px] pl-[32px] sm:pl-[40px] gap-[16.8px] sm:gap-[21px] top-[99px] right-0 border-l-2 border-b-2 border-[#968080] bg-white items-center rounded-bl-[40px] z-50 overflow-hidden transform translate-x-full opacity-0 transition-all duration-300 ease-out"
+        >
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#968080] items-center hover:bg-[#968080]/40 transition-all duration-200 ease-in active:bg-[#968080]/80 cursor-pointer"
+            onclick="window.location.href = '/index.html'"
+          >
+            <img
+              src="/image/icon/home.svg"
+              alt="home"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              首頁
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FFF6E3] items-center hover:bg-[#FFF6E3]/40 active:bg-[#FFF6E3]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/about.html'"
+          >
+            <img
+              src="/image/icon/about.svg"
+              alt="about"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              關於
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FED7CC] items-center hover:bg-[#FED7CC]/40 active:bg-[#FED7CC]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/members.html'"
+          >
+            <img
+              src="/image/icon/members.svg"
+              alt="members"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              參與成員
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/taiwan.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              臺灣行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#FDC3BE] items-center hover:bg-[#FDC3BE]/40 active:bg-[#FDC3BE]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/china.html'"
+          >
+            <img
+              src="/image/icon/trip.svg"
+              alt="trip"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              大陸行
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#B7A9DD] items-center hover:bg-[#B7A9DD]/40 active:bg-[#B7A9DD]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/mails.html'"
+          >
+            <img
+              src="/image/icon/mails.svg"
+              alt="mails"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              感謝信
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#97A6D6] items-center hover:bg-[#97A6D6]/40 active:bg-[#97A6D6]/80 transition-all duration-200 ease-in cursor-pointer"
+            onclick="window.location.href = '/publications.html'"
+          >
+            <img
+              src="/image/icon/publications.svg"
+              alt="publications"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              狀元出品
+            </h3>
+          </div>
+
+          <div
+            class="flex min-w-[198.4px] sm:min-w-[248px] min-h-[42.4px] sm:min-h-[53px] pl-[16px] sm:pl-[31px] gap-[7.2px] sm:gap-3 rounded-[20px] sm:rounded-[40px] border-2 border-[#53A1C9] items-center hover:bg-[#53A1C9]/40 active:bg-[#53A1C9]/80 transition-all duration-200 ease-in cursor-pointer"
+          >
+            <img
+              src="/image/icon/album.svg"
+              alt="album"
+              class="w-[25px] sm:w-[28px] aspect-square"
+            />
+            <h3
+              class="text-lg sm:text-xl font-light text-center text-[#968080]"
+            >
+              照片集
+            </h3>
+          </div>
+        </div>
+
+        <div
+          id="backdrop"
+          class="fixed inset-0 bg-black/30 z-40 opacity-0 pointer-events-none transition-opacity duration-300"
+        ></div>
       </div>
     </div>
     <div
       class="flex flex-col relative mt-[-36px] items-center bg-linear-to-b from-white from-75% to-[#FFF6E3] to-100% rounded-t-[20px] overflow-hidden z-10"
     >
       <img
-        src="../../image/mountain.svg"
+        src="/image/mountain.svg"
         alt="mountain"
         style="--t: 88"
         class="absolute w-full h-auto z-0 adjust_top"
@@ -70,33 +208,48 @@
       </div>
 
       <div
-        style="--mt: 96"
-        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginT reveal_to_t"
+        style="--mb: 90"
+        class="text_box_width h-auto text-base sm:text-[20px]/[34px] font-normal text-[#968080] adjust_marginB reveal_to_t"
       >
-        狀元營首日,從機場迎接的熱情相逢、車上交流的歡聲笑語,到晚宴中誠摯的祝福與才藝表演,再到夜遊臺北的點滴回憶,串起一段段初識卻親近的情誼。在這充滿歡笑與感動的一天裡,臺大與北大的學生們不只開啟了文化交流的序章,也悄悄在彼此心中埋下友誼的種子,為這段跨海相遇寫下難忘的第一頁。
+        敬愛的辜仲諒先生：
         <br />
         <br />
-        狀元營的第一天,參訪團一早便搭乘遊覽車前往桃園機場第二航廈,準備迎接來自北京大學的朋友們。各組手舉歡迎標語,站在入境大門外滿懷期待。當北大的師生陸續走出來時,現場頓時湧現歡呼與掌聲,即便是初次見面,彼此間卻早已一見如故,整個機場大廳洋溢著熱情與興奮的氛圍。
+        　　2025
+        年的夏天，對我們而言，是一段難以忘懷的旅程。誠摯感謝您對教育與青年交流的支持，讓我們有幸參與這次意義非凡的第二十一屆狀元營。在您的慷慨贊助與用心促成下，我們不僅走訪了臺灣的日月潭、九份，也深入探索了四川的樂山大佛與峨眉山，親眼見證了大熊貓繁育研究基地的動人景象，開展了一場結合自然、人文與思想的交流之旅。
         <br />
         <br />
-        在返回市區的路途中,導遊向參訪團講解本次臺灣行的重要注意事項,而兩校學生也開始熱絡交流。車廂內話題不斷,從課堂經驗、校園文化聊到飲食差異,歡聲笑語不絕於耳。伴隨著愉快的談話,車隊順利抵達位於市中心的臺北花園大酒店。
+        　　在臺灣，我們迎接來自對岸的夥伴們，用最熱情的方式介紹我們熟悉的一切。從校園到山海，從捷運到便利商店，從臺灣大學的書卷氣息到九份山城的懷舊氣氛，每一處風景都化作我們交流的語言。那幾天，我們不只是導覽者，更是文化的橋梁與情感的連結者。這段經歷，讓我們更加自豪於所生長的土地，也更加理解分享與傳遞的重要。
         <br />
         <br />
-        稍作休息後,臺大的同學們換上各自高中時期的制服,準備迎接這場象徵友誼啟航的歡迎晚宴。活動由兩校院長先後致詞揭開序幕,並互贈紀念禮品,象徵兩校之間深厚的情誼與未來的合作願景。晚宴中,佳餚陸續上桌,隨後登場的則是由臺大同學精心準備的才藝表演。
+        　　當我們一同踏上飛往四川的旅程時，心中滿懷期待，而這份期待也在一步步的行腳中被溫柔實現。登上峨眉山時雲霧繚繞，我們在海拔三千公尺的地方望見金頂，在絕美景致中靜靜傾聽彼此分享夢想與生活的片段；在樂山大佛前，我們不僅驚嘆於工藝與信仰的偉大，也驚喜地發現文化的差異如何在理解中被縮短。在成都大熊貓繁育研究基地，看著一隻隻毛茸茸的大熊貓慵懶吃竹、翻滾撒嬌，更讓我們明白對生命與自然的愛，是超越地域的共同語言。
         <br />
         <br />
-        首先,陳凱琳同學以優雅的大提琴演奏揭開序幕,旋律深沉動人;接著,周妍芝同學以輕快的烏克麗麗自彈自唱,帶動現場氣氛;謝清槐同學則演唱了伍佰的經典歌曲〈夢醒時分〉,情感真摯,贏得熱烈掌聲。最終,全體臺大學生一同大合唱本屆狀元營的營歌──理想混蛋的〈愚者〉,為歡迎晚宴劃下溫馨感人的句點。
+        　　而最珍貴的，不只是走過的地方與看到的風景，而是我們在這段過程中所建立的連結。十天的相伴，不僅讓我們與北大的同學從陌生到熟悉，更讓彼此在一次次討論與傾聽中，慢慢理解對方的生活與思考。從學術研討到日常對話，從對未來職涯的探討到深夜裡的暢聊，我們一次次在互動中找到共鳴。這些交流，早已不只是活動的安排，而成為一段段真摯友誼的開始。
         <br />
         <br />
-        晚宴結束後,參訪團各組兵分多路,展開臺北夜遊行程。有些組帶著北大朋友們體驗臺北的大眾運輸系統,前往臺北101前拍照,並且前往附近的臨江街觀光夜市體驗臺灣的夜市文化,品嚐各種豐富的宵夜小吃。也有些組帶著北大同學前往附近的酒吧,在觥籌交錯之間把酒言歡,互相聊著彼此的生活。另外也有組別帶著北大同學到總圖書館前的走廊,在屋簷下席地而坐,遊玩機智又燒腦的桌遊──「阿瓦隆」。
+        　　辜先生，若沒有您的支持，我們無法擁有這樣難得的機會。這次狀元營，不僅是一場跨越海峽的文化交流，更是一場青春的洗禮與心靈的相遇。感謝您讓我們得以踏上這段豐富的旅程，讓我們在彼此生命中留下深刻的印記。
         <br />
         <br />
-        夜幕低垂,臺北的天色宛如絲絨般沈靜下來,燈火一盞盞點亮夜的輪廓,也照亮每一段悄然萌生的友誼。城市在晚風中舒展,樓宇閃爍著溫柔光芒,車聲、人語與笑語交織成一首屬於夏夜的輕快樂章。那一晚,不只是夜遊的記憶,更是彼此青春交會的見證。笑聲與故事如流星劃過心湖,縱使日後天涯各方,這份燦爛與溫暖,仍將在記憶深處靜靜閃爍。
+        　　這些天的體會，將會在未來日子裡持續發酵。我們會記得在群山之間的笑聲，也會記得告別時的依依不捨。更會記得，是因為您的遠見與付出，我們才得以攜手同行、彼此成就。未來，無論我們走向哪個方向，都將懷抱這段記憶繼續前行，將這份情誼與學習的精神，延續下去，傳遞出去。
+        <br />
+        <br />
+        衷心感謝您，辜先生，感謝您為兩岸青年搭起這樣一座連結的橋樑，讓我們跨越地理與文化的界線，真誠相遇。
+        <br />
+        <br />
+        <br />
+        第二十一屆狀元營 臺灣大學第一組
+        <br />
+        會計學系 黃思穎
+        <br />
+        國際企業學系 周妍芝
+        <br />
+        國際企業學系 陳凱琳
+        <br />工商管理學系 陳昇葳 <br />工商管理學系 顧懷允 <br />敬上
       </div>
 
       <img
-        src="/image/about.png"
-        alt="about"
+        src="/image/mails/group1/content.png"
+        alt="mails content"
         style="--radius: 40"
         class="image_width aspect-auto adjust_radius reveal_to_t"
       />
