@@ -123,6 +123,7 @@ if (thumbnail_to_l) {
 const slides_container = document.getElementById("slides_container");
 if (slides_container) {
   const taiwan = window.location.href.includes("taiwan");
+  const china = window.location.href.includes("china");
   const day = window.location.href[window.location.href.indexOf("day") + 3];
   if (taiwan) {
     if (day !== "5") {
@@ -137,6 +138,24 @@ if (slides_container) {
       for (let i = 1; i <= 4; ++i) {
         let img = document.createElement("img");
         img.src = `/image/trip/taiwan/day${day}/${i}.png`;
+        img.alt = "slide";
+        img.className = "object-cover";
+        slides_container.appendChild(img);
+      }
+    }
+  } else if (china) {
+    if (day !== "3" && day != "5") {
+      for (let i = 1; i <= 9; ++i) {
+        let img = document.createElement("img");
+        img.src = `/image/trip/china/day${day}/${i}.png`;
+        img.alt = "slide";
+        img.className = "object-cover";
+        slides_container.appendChild(img);
+      }
+    } else {
+      for (let i = 1; i <= 8; ++i) {
+        let img = document.createElement("img");
+        img.src = `/image/trip/china/day${day}/${i}.png`;
         img.alt = "slide";
         img.className = "object-cover";
         slides_container.appendChild(img);
