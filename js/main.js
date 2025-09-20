@@ -71,6 +71,7 @@ if (reveal.length > 0) {
 const reveal_to_t = Array.from(document.getElementsByClassName("reveal_to_t"));
 
 if (reveal_to_t.length > 0) {
+  const isTrip = window.location.href.includes("day");
   const io = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -80,7 +81,7 @@ if (reveal_to_t.length > 0) {
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: isTrip ? 0.25 : 0.1 }
   );
 
   reveal_to_t.forEach((elem) => io.observe(elem));
