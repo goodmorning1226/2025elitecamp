@@ -458,21 +458,53 @@ nav li {
   transform: scale(1.1);
 }
 
-.member_selector {
-  width: calc(215 / 1440 * 100vw);
-  transition: all;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-}
-
-.member_selector:hover {
-  width: 100%;
-}
-
 .mails_box_shadow {
   box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.15);
 }
 
 .mails_box_shadow:active {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.members_tab {
+  color: #968080;
+  background-color: white;
+}
+
+.members_tab:hover {
+  color: white;
+  background-color: color-mix(in oklab, #968080 80%, transparent);
+}
+
+.members_tab:active {
+  color: white;
+  background-color: #968080;
+}
+
+.members_tab_clicked {
+  color: white !important;
+  background-color: #968080 !important;
+}
+
+.member_selector {
+  width: calc(215 / 1440 * 100vw);
+  transition: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  border-color: var(--color);
+}
+
+.member_selector:hover {
+  width: 100%;
+  background-color: color-mix(in oklab, var(--color) 60%, transparent);
+}
+
+.member_selector:active {
+  width: 100%;
+  background-color: var(--color);
+}
+
+.member_selector_clicked {
+  width: 100%;
+  background-color: var(--color) !important;
 }

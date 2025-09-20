@@ -130,7 +130,7 @@ if (slides_container) {
     if (day !== "5") {
       for (let i = 1; i <= 9; ++i) {
         let img = document.createElement("img");
-        img.src = `/image/trip/taiwan/day${day}/${i}.png`;
+        img.src = `../../image/trip/taiwan/day${day}/${i}.png`;
         img.alt = "slide";
         img.className = "object-cover";
         slides_container.appendChild(img);
@@ -138,7 +138,7 @@ if (slides_container) {
     } else {
       for (let i = 1; i <= 4; ++i) {
         let img = document.createElement("img");
-        img.src = `/image/trip/taiwan/day${day}/${i}.png`;
+        img.src = `../../image/trip/taiwan/day${day}/${i}.png`;
         img.alt = "slide";
         img.className = "object-cover";
         slides_container.appendChild(img);
@@ -148,7 +148,7 @@ if (slides_container) {
     if (day !== "3" && day != "5") {
       for (let i = 1; i <= 9; ++i) {
         let img = document.createElement("img");
-        img.src = `/image/trip/china/day${day}/${i}.png`;
+        img.src = `../../image/trip/china/day${day}/${i}.png`;
         img.alt = "slide";
         img.className = "object-cover";
         slides_container.appendChild(img);
@@ -156,7 +156,7 @@ if (slides_container) {
     } else {
       for (let i = 1; i <= 8; ++i) {
         let img = document.createElement("img");
-        img.src = `/image/trip/china/day${day}/${i}.png`;
+        img.src = `../../image/trip/china/day${day}/${i}.png`;
         img.alt = "slide";
         img.className = "object-cover";
         slides_container.appendChild(img);
@@ -287,3 +287,88 @@ if (slides_container) {
     if (e.key === "Escape" && isOpen()) closeMenu();
   });
 })();
+
+const teacher_names = ["f"];
+const student_names = [
+  "黃思穎",
+  "周妍芝",
+  "陳凱琳",
+  "陳昇葳",
+  "顧懷允",
+  "陳卲宇",
+  "王睿宇",
+  "林宜璿",
+  "陳巧羚",
+  "呂卿華",
+  "曾稚甯",
+  "謝清槐",
+  "歐庭芳",
+  "宋宇倫",
+  "謝宜臻",
+  "李媛",
+  "許晨維",
+  "劉綵瑜",
+  "劉威廷",
+  "謝琬昀",
+];
+
+const members_container = document.getElementById("members_container");
+
+if (members_container) {
+  const tabs = Array.from(document.getElementsByClassName("members_tab"));
+  const selectors = Array.from(
+    document.getElementsByClassName("member_selector")
+  );
+  const ntu_name = document.getElementById("ntu_member_name");
+  const ntu_img = document.getElementById("ntu_member_img");
+
+  const tabChangeHandler = (group_num) => {
+    tabs.forEach((tab, idx) => {
+      if (idx === group_num) {
+        tab.classList.add("members_tab_clicked");
+      } else {
+        tab.classList.remove("members_tab_clicked");
+      }
+    });
+
+    if (group_num != 0) {
+      for (let i = 0; i < 5; ++i) {
+        selectors[i].getElementsByTagName(
+          "img"
+        )[0].src = `./image/members/group${group_num}/ntu/${i + 1}.jpg`;
+
+        selectors[i].getElementsByTagName("h5")[0].innerText =
+          student_names[i + (group_num - 1) * 5];
+      }
+    }
+  };
+  tabChangeHandler(1);
+
+  tabs.forEach((tab, idx) => {
+    tab.addEventListener("click", () => {
+      tabChangeHandler(idx);
+      selectorChangeHandler(0);
+    });
+  });
+
+  const selectorChangeHandler = (selector_num) => {
+    selectors.forEach((selector, idx) => {
+      if (idx === selector_num) {
+        selector.classList.add("member_selector_clicked");
+      } else {
+        selector.classList.remove("member_selector_clicked");
+      }
+    });
+
+    ntu_name.innerText =
+      selectors[selector_num].getElementsByTagName("h5")[0].innerText;
+    ntu_img.src = selectors[selector_num].getElementsByTagName("img")[0].src;
+  };
+  selectorChangeHandler(0);
+
+  selectors.forEach((selector, idx) => {
+    selector.addEventListener("click", () => {
+      selectorChangeHandler(idx);
+    });
+  });
+}

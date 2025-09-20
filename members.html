@@ -196,7 +196,8 @@
         >
           <div
             style="--h: 88"
-            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] text-[#968080] rounded-t-[40px] adjust_height bg-white hover:bg-[#968080]/80 hover:text-white active:bg-[#968080] active:text-white transition-all duration-300 ease-in cursor-pointer"
+            id="members_tab0"
+            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] rounded-t-[40px] adjust_height transition-all duration-300 ease-in cursor-pointer"
           >
             <h3
               style="--text: 48; --line: 48"
@@ -205,15 +206,69 @@
               師長
             </h3>
           </div>
+
+          <div
+            style="--h: 88"
+            id="members_tab1"
+            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] rounded-t-[40px] adjust_height transition-all duration-300 ease-in cursor-pointer"
+          >
+            <h3
+              style="--text: 48; --line: 48"
+              class="w-full font-bold text-center adjust_text"
+            >
+              第一組
+            </h3>
+          </div>
+
+          <div
+            style="--h: 88"
+            id="members_tab2"
+            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] rounded-t-[40px] adjust_height transition-all duration-300 ease-in cursor-pointer"
+          >
+            <h3
+              style="--text: 48; --line: 48"
+              class="w-full font-bold text-center adjust_text"
+            >
+              第二組
+            </h3>
+          </div>
+
+          <div
+            style="--h: 88"
+            id="members_tab3"
+            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] rounded-t-[40px] adjust_height transition-all duration-300 ease-in cursor-pointer"
+          >
+            <h3
+              style="--text: 48; --line: 48"
+              class="w-full font-bold text-center adjust_text"
+            >
+              第三組
+            </h3>
+          </div>
+
+          <div
+            style="--h: 88"
+            id="members_tab4"
+            class="members_tab flex w-full justify-center items-center border-t-4 border-x-4 border-[#968080] rounded-t-[40px] adjust_height transition-all duration-300 ease-in cursor-pointer"
+          >
+            <h3
+              style="--text: 48; --line: 48"
+              class="w-full font-bold text-center adjust_text"
+            >
+              第四組
+            </h3>
+          </div>
         </div>
         <div
           style="--w: 1186; --h: 540"
+          id="ntu_members_box"
           class="members_box relative border-4 border-[#968080] rounded-b-[40px] bg-white adjust_width adjust_height overflow-hidden"
         >
           <img
-            src="/image/members/1/阿慈卡.png"
+            src="./image/members/placeholder.png"
             alt="member"
             style="--w: 540"
+            id="ntu_member_img"
             class="absolute aspect-square left-0 bottom-0 adjust_width z-0"
           />
           <div
@@ -232,16 +287,17 @@
             class="absolute adjust_left adjust_top z-20"
           >
             <img
-              src="/image/ntu_members.svg"
+              src="./image/ntu_members.svg"
               alt="ntu"
               style="--h: 48"
               class="aspect-auto adjust_height"
             />
             <h3
               style="--text: 96; --line: 96"
+              id="ntu_member_name"
               class="font-black text-center text-[#968080] adjust_text"
             >
-              陳昇葳
+              名稱
             </h3>
           </div>
           <div
@@ -249,18 +305,92 @@
             class="member_selector_container absolute grid grid-rows-5 right-0 my-auto justify-items-end items-center adjust_width adjust_top adjust_bottom cursor-pointer"
           >
             <div
-              style="--h: 80; --pl: 8"
+              style="--h: 80; --pl: 8; --color: #fff6e3"
               class="member_selector flex items-center border-l-4 border-y-4 rounded-l-full adjust_height adjust_paddingL"
             >
-              <div
+              <img
+                src="./image/members/placeholder.png"
+                alt="member_selector"
                 style="--w: 64"
-                class="aspect-square rounded-full bg-black adjust_width"
-              ></div>
+                class="aspect-square rounded-full adjust_width"
+              />
               <h5
                 style="--text: 36; --line: 36; --ml: 14"
                 class="font-bold text-[#968080] adjust_text adjust_marginL"
               >
-                陳昇葳
+                名稱
+              </h5>
+            </div>
+
+            <div
+              style="--h: 80; --pl: 8; --color: #fed7cc"
+              class="member_selector flex items-center border-l-4 border-y-4 rounded-l-full adjust_height adjust_paddingL"
+            >
+              <img
+                src="./image/members/placeholder.png"
+                alt="member_selector"
+                style="--w: 64"
+                class="aspect-square rounded-full adjust_width"
+              />
+              <h5
+                style="--text: 36; --line: 36; --ml: 14"
+                class="font-bold text-[#968080] adjust_text adjust_marginL"
+              >
+                名稱
+              </h5>
+            </div>
+
+            <div
+              style="--h: 80; --pl: 8; --color: #fdc3be"
+              class="member_selector flex items-center border-l-4 border-y-4 rounded-l-full adjust_height adjust_paddingL"
+            >
+              <img
+                src="./image/members/placeholder.png"
+                alt="member_selector"
+                style="--w: 64"
+                class="aspect-square rounded-full adjust_width"
+              />
+              <h5
+                style="--text: 36; --line: 36; --ml: 14"
+                class="font-bold text-[#968080] adjust_text adjust_marginL"
+              >
+                名稱
+              </h5>
+            </div>
+
+            <div
+              style="--h: 80; --pl: 8; --color: #c2add7"
+              class="member_selector flex items-center border-l-4 border-y-4 rounded-l-full adjust_height adjust_paddingL"
+            >
+              <img
+                src="./image/members/placeholder.png"
+                alt="member_selector"
+                style="--w: 64"
+                class="aspect-square rounded-full adjust_width"
+              />
+              <h5
+                style="--text: 36; --line: 36; --ml: 14"
+                class="font-bold text-[#968080] adjust_text adjust_marginL"
+              >
+                名稱
+              </h5>
+            </div>
+
+            <div
+              style="--h: 80; --pl: 8; --color: #64a2cc"
+              class="member_selector flex items-center border-l-4 border-y-4 rounded-l-full adjust_height adjust_paddingL"
+            >
+              <img
+                src="./image/members/placeholder.png"
+                alt="member_selector"
+                style="--w: 64"
+                class="aspect-square rounded-full adjust_width"
+              />
+              <h5
+                style="--text: 36; --line: 36; --ml: 14"
+                class="font-bold text-[#968080] adjust_text adjust_marginL"
+              >
+                名稱
               </h5>
             </div>
           </div>
