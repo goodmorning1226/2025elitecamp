@@ -374,6 +374,161 @@ if (slides_container) {
 // }
 
 // 依你的需求：NTU 與 PKU 各自一份名單（這裡先共用同一份，之後你可替換）
+// const ntu_student_names = [
+//   "黃思穎",
+//   "周妍芝",
+//   "陳凱琳",
+//   "陳昇葳",
+//   "顧懷允",
+//   "陳卲宇",
+//   "王睿宇",
+//   "林宜璿",
+//   "陳巧羚",
+//   "呂卿華",
+//   "曾稚甯",
+//   "謝清槐",
+//   "歐庭芳",
+//   "宋宇倫",
+//   "謝宜臻",
+//   "李媛",
+//   "許晨維",
+//   "劉綵瑜",
+//   "劉威廷",
+//   "謝琬昀",
+// ];
+
+// // 如果有不同名單，把這份換成 PKU 的 20 名
+// const pku_student_names = [
+//   "羅思葳",
+//   "應越",
+//   "許邁",
+//   "王語涵",
+//   "毛嘉藝",
+//   "郭馨潔",
+//   "彭亮文",
+//   "李欢笙",
+//   "王鍵豪",
+//   "李姸姿",
+//   "張書瑜",
+//   "林嘉樂",
+//   "李皓夫",
+//   "黃鄭煊",
+//   "俞方圓",
+//   "郭奕彤",
+//   "王啟軒",
+//   "韓曄",
+//   "區豪燊",
+//   "邵睿思",
+// ];
+
+// const members_container = document.getElementById("members_container");
+
+// if (members_container) {
+//   const tabs = Array.from(document.getElementsByClassName("members_tab"));
+
+//   // 抓 NTU 盒子中的節點
+//   const ntu_name = document.getElementById("ntu_member_name");
+//   const ntu_img = document.getElementById("ntu_member_img");
+//   const ntuSelectors = Array.from(
+//     document.querySelectorAll("#ntu_members_box .member_selector")
+//   );
+
+//   // 抓 PKU 盒子中的節點
+//   const pku_name = document.getElementById("pku_member_name");
+//   const pku_img = document.getElementById("pku_member_img");
+//   const pkuSelectors = Array.from(
+//     document.querySelectorAll("#pku_members_box .member_selector")
+//   );
+
+//   // 切換 Tab：同時更新 NTU 與 PKU 的 5 個 selector 內容（圖與名）
+//   const tabChangeHandler = (group_num) => {
+//     // tab 樣式
+//     tabs.forEach((tab, idx) => {
+//       if (idx === group_num) {
+//         tab.classList.add("members_tab_clicked");
+//       } else {
+//         tab.classList.remove("members_tab_clicked");
+//       }
+//     });
+
+//     if (group_num !== 0) {
+//       // NTU
+//       for (let i = 0; i < 5; ++i) {
+//         const imgEl = ntuSelectors[i].getElementsByTagName("img")[0];
+//         const nameEl = ntuSelectors[i].getElementsByTagName("h5")[0];
+
+//         imgEl.src = `./image/members/group${group_num}/ntu/${i + 1}.jpg`;
+//         nameEl.innerText = ntu_student_names[i + (group_num - 1) * 5];
+//       }
+
+//       // PKU
+//       for (let i = 0; i < 5; ++i) {
+//         const imgEl = pkuSelectors[i].getElementsByTagName("img")[0];
+//         const nameEl = pkuSelectors[i].getElementsByTagName("h5")[0];
+
+//         imgEl.src = `./image/members/group${group_num}/pku/${i + 1}.jpg`;
+//         nameEl.innerText = pku_student_names[i + (group_num - 1) * 5];
+//       }
+
+//       // 切換分組時，兩個 box 都回到各自 selector 第 0 個被選中
+//       selectMember("ntu", 0);
+//       selectMember("pku", 0);
+//     }
+//   };
+
+//   // 讓兩個 box 各自只會有一個 selector 被選中
+//   const selectMember = (box, selectorIndex) => {
+//     if (box === "ntu") {
+//       ntuSelectors.forEach((selector, idx) => {
+//         selector.classList.toggle(
+//           "member_selector_clicked",
+//           idx === selectorIndex
+//         );
+//       });
+//       ntu_name.innerText =
+//         ntuSelectors[selectorIndex].getElementsByTagName("h5")[0].innerText;
+//       ntu_img.src =
+//         ntuSelectors[selectorIndex].getElementsByTagName("img")[0].src;
+//     } else if (box === "pku") {
+//       pkuSelectors.forEach((selector, idx) => {
+//         selector.classList.toggle(
+//           "member_selector_clicked",
+//           idx === selectorIndex
+//         );
+//       });
+//       pku_name.innerText =
+//         pkuSelectors[selectorIndex].getElementsByTagName("h5")[0].innerText;
+//       pku_img.src =
+//         pkuSelectors[selectorIndex].getElementsByTagName("img")[0].src;
+//     }
+//   };
+
+//   // 初始狀態：預設第一組，兩邊都選第 0 個
+//   tabChangeHandler(1);
+
+//   // 點擊 Tab：兩個 box 一起切換
+//   tabs.forEach((tab, idx) => {
+//     tab.addEventListener("click", () => {
+//       tabChangeHandler(idx);
+//     });
+//   });
+
+//   // 點擊 NTU 的 selector：只影響 NTU box 的選取與大圖
+//   ntuSelectors.forEach((selector, idx) => {
+//     selector.addEventListener("click", () => {
+//       selectMember("ntu", idx);
+//     });
+//   });
+
+//   // 點擊 PKU 的 selector：只影響 PKU box 的選取與大圖
+//   pkuSelectors.forEach((selector, idx) => {
+//     selector.addEventListener("click", () => {
+//       selectMember("pku", idx);
+//     });
+//   });
+// }
+
+// 學生名單
 const ntu_student_names = [
   "黃思穎",
   "周妍芝",
@@ -397,7 +552,6 @@ const ntu_student_names = [
   "謝琬昀",
 ];
 
-// 如果有不同名單，把這份換成 PKU 的 20 名
 const pku_student_names = [
   "羅思葳",
   "應越",
@@ -421,28 +575,40 @@ const pku_student_names = [
   "邵睿思",
 ];
 
+// 師長名單
+const ntu_teacher_names = ["胡星陽", "黃恆獎", "余峻瑜", "畢南怡", "鄭惠文"];
+const pku_teacher_names = [
+  "張聖平",
+  "塗雲東",
+  "向昊天",
+  "羅彌",
+  "王歡",
+  "韓永梅",
+];
+
 const members_container = document.getElementById("members_container");
 
 if (members_container) {
   const tabs = Array.from(document.getElementsByClassName("members_tab"));
 
-  // 抓 NTU 盒子中的節點
+  // NTU box
   const ntu_name = document.getElementById("ntu_member_name");
   const ntu_img = document.getElementById("ntu_member_img");
   const ntuSelectors = Array.from(
     document.querySelectorAll("#ntu_members_box .member_selector")
   );
 
-  // 抓 PKU 盒子中的節點
+  // PKU box
+  const pkuBox = document.getElementById("pku_members_box");
   const pku_name = document.getElementById("pku_member_name");
   const pku_img = document.getElementById("pku_member_img");
   const pkuSelectors = Array.from(
     document.querySelectorAll("#pku_members_box .member_selector")
   );
 
-  // 切換 Tab：同時更新 NTU 與 PKU 的 5 個 selector 內容（圖與名）
+  // 切換 Tab
   const tabChangeHandler = (group_num) => {
-    // tab 樣式
+    // Tab 樣式
     tabs.forEach((tab, idx) => {
       if (idx === group_num) {
         tab.classList.add("members_tab_clicked");
@@ -451,76 +617,122 @@ if (members_container) {
       }
     });
 
-    if (group_num !== 0) {
-      // NTU
+    if (group_num === 0) {
+      pkuBox.style.setProperty("--h", "640");
+      // NTU 師長
+      ntuSelectors.forEach((selector, i) => {
+        if (i < ntu_teacher_names.length) {
+          const imgEl = selector.getElementsByTagName("img")[0];
+          const nameEl = selector.getElementsByTagName("h5")[0];
+          imgEl.src = `./image/members/teacher/ntu/${i + 1}.jpg`;
+          nameEl.innerText = ntu_teacher_names[i];
+          selector.style.display = "flex";
+        } else {
+          selector.style.display = "none";
+        }
+      });
+
+      // PKU 師長
+      pkuSelectors.forEach((selector, i) => {
+        if (i < pku_teacher_names.length) {
+          const imgEl = selector.getElementsByTagName("img")[0];
+          const nameEl = selector.getElementsByTagName("h5")[0];
+          imgEl.src = `./image/members/teacher/pku/${i + 1}.jpg`;
+          nameEl.innerText = pku_teacher_names[i];
+          selector.style.display = "flex";
+        } else {
+          selector.style.display = "none";
+        }
+      });
+
+      // 初始選第 0 個
+      selectMember("ntu", 0);
+      selectMember("pku", 0);
+    } else {
+      pkuBox.style.setProperty("--h", "540");
+      // NTU 學生
       for (let i = 0; i < 5; ++i) {
         const imgEl = ntuSelectors[i].getElementsByTagName("img")[0];
         const nameEl = ntuSelectors[i].getElementsByTagName("h5")[0];
-
         imgEl.src = `./image/members/group${group_num}/ntu/${i + 1}.jpg`;
         nameEl.innerText = ntu_student_names[i + (group_num - 1) * 5];
+        ntuSelectors[i].style.display = "flex";
       }
 
-      // PKU
-      for (let i = 0; i < 5; ++i) {
-        const imgEl = pkuSelectors[i].getElementsByTagName("img")[0];
-        const nameEl = pkuSelectors[i].getElementsByTagName("h5")[0];
-
-        imgEl.src = `./image/members/group${group_num}/pku/${i + 1}.jpg`;
-        nameEl.innerText = pku_student_names[i + (group_num - 1) * 5];
+      // PKU 學生（只有前 5 個有用，第 6 個隱藏）
+      for (let i = 0; i < pkuSelectors.length; ++i) {
+        const selector = pkuSelectors[i];
+        if (i < 5) {
+          const imgEl = selector.getElementsByTagName("img")[0];
+          const nameEl = selector.getElementsByTagName("h5")[0];
+          imgEl.src = `./image/members/group${group_num}/pku/${i + 1}.jpg`;
+          nameEl.innerText = pku_student_names[i + (group_num - 1) * 5];
+          selector.style.display = "flex";
+        } else {
+          selector.style.display = "none"; // 第六個不用
+        }
       }
 
-      // 切換分組時，兩個 box 都回到各自 selector 第 0 個被選中
+      // 初始選第 0 個
       selectMember("ntu", 0);
       selectMember("pku", 0);
     }
   };
 
-  // 讓兩個 box 各自只會有一個 selector 被選中
+  // 選人 (NTU / PKU 各自只有一個被選，切換時大圖淡出淡入)
   const selectMember = (box, selectorIndex) => {
+    let nameEl, imgEl, selectors;
+
     if (box === "ntu") {
-      ntuSelectors.forEach((selector, idx) => {
-        selector.classList.toggle(
-          "member_selector_clicked",
-          idx === selectorIndex
-        );
-      });
-      ntu_name.innerText =
-        ntuSelectors[selectorIndex].getElementsByTagName("h5")[0].innerText;
-      ntu_img.src =
-        ntuSelectors[selectorIndex].getElementsByTagName("img")[0].src;
-    } else if (box === "pku") {
-      pkuSelectors.forEach((selector, idx) => {
-        selector.classList.toggle(
-          "member_selector_clicked",
-          idx === selectorIndex
-        );
-      });
-      pku_name.innerText =
-        pkuSelectors[selectorIndex].getElementsByTagName("h5")[0].innerText;
-      pku_img.src =
-        pkuSelectors[selectorIndex].getElementsByTagName("img")[0].src;
+      selectors = ntuSelectors;
+      nameEl = ntu_name;
+      imgEl = ntu_img;
+    } else {
+      selectors = pkuSelectors;
+      nameEl = pku_name;
+      imgEl = pku_img;
     }
+
+    // 讓 selector 有獨立選中狀態
+    selectors.forEach((selector, idx) => {
+      selector.classList.toggle(
+        "member_selector_clicked",
+        idx === selectorIndex
+      );
+    });
+
+    // ====== 直接用 JS 做淡出淡入 ======
+    imgEl.style.transition = "opacity 0.4s ease"; // 給動畫屬性
+    imgEl.style.opacity = "0"; // 先淡出
+
+    setTimeout(() => {
+      // 換圖和名字
+      nameEl.innerText =
+        selectors[selectorIndex].getElementsByTagName("h5")[0].innerText;
+      imgEl.src = selectors[selectorIndex].getElementsByTagName("img")[0].src;
+
+      // 淡入
+      imgEl.style.opacity = "1";
+    }, 400); // 與 transition 時間一致
   };
 
-  // 初始狀態：預設第一組，兩邊都選第 0 個
-  tabChangeHandler(1);
+  tabChangeHandler(0);
 
-  // 點擊 Tab：兩個 box 一起切換
+  // 點擊 Tab
   tabs.forEach((tab, idx) => {
     tab.addEventListener("click", () => {
       tabChangeHandler(idx);
     });
   });
 
-  // 點擊 NTU 的 selector：只影響 NTU box 的選取與大圖
+  // 點擊 selector（NTU）
   ntuSelectors.forEach((selector, idx) => {
     selector.addEventListener("click", () => {
       selectMember("ntu", idx);
     });
   });
 
-  // 點擊 PKU 的 selector：只影響 PKU box 的選取與大圖
+  // 點擊 selector（PKU）
   pkuSelectors.forEach((selector, idx) => {
     selector.addEventListener("click", () => {
       selectMember("pku", idx);
