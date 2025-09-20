@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-zinc-100: oklch(96.7% 0.001 286.375);
     --color-zinc-300: oklch(87.1% 0.006 286.286);
     --color-black: #000;
@@ -248,9 +247,6 @@
   .left-3 {
     left: calc(var(--spacing) * 3);
   }
-  .left-79 {
-    left: calc(var(--spacing) * 79);
-  }
   .left-79\/200 {
     left: calc(79/200 * 100%);
   }
@@ -329,9 +325,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-78\/41 {
     aspect-ratio: 78/41;
   }
@@ -362,14 +355,8 @@
   .min-h-\[42\.4px\] {
     min-height: 42.4px;
   }
-  .w-0 {
-    width: calc(var(--spacing) * 0);
-  }
   .w-0\.5 {
     width: calc(var(--spacing) * 0.5);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-5\/6 {
     width: calc(5/6 * 100%);
@@ -410,12 +397,6 @@
   .min-w-\[198\.4px\] {
     min-width: 198.4px;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .translate-x-0 {
     --tw-translate-x: calc(var(--spacing) * 0);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -439,9 +420,6 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -450,6 +428,9 @@
   }
   .grid-rows-5 {
     grid-template-rows: repeat(5, minmax(0, 1fr));
+  }
+  .grid-rows-6 {
+    grid-template-rows: repeat(6, minmax(0, 1fr));
   }
   .grid-rows-8 {
     grid-template-rows: repeat(8, minmax(0, 1fr));
@@ -499,6 +480,9 @@
   }
   .overflow-x-scroll {
     overflow-x: scroll;
+  }
+  .scroll-smooth {
+    scroll-behavior: smooth;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -604,9 +588,6 @@
   }
   .bg-\[\#F3F3F3\] {
     background-color: #F3F3F3;
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/30 {
     background-color: color-mix(in srgb, #000 30%, transparent);
@@ -740,9 +721,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-\[\#968080\] {
     color: #968080;
   }
@@ -764,10 +742,6 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -828,20 +802,6 @@
       }
     }
   }
-  .hover\:bg-\[\#968080\]\/50 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in oklab, #968080 50%, transparent);
-      }
-    }
-  }
-  .hover\:bg-\[\#968080\]\/80 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: color-mix(in oklab, #968080 80%, transparent);
-      }
-    }
-  }
   .hover\:bg-\[\#B7A9DD\]\/40 {
     &:hover {
       @media (hover: hover) {
@@ -870,13 +830,6 @@
       }
     }
   }
-  .hover\:text-white {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-white);
-      }
-    }
-  }
   .hover\:underline {
     &:hover {
       @media (hover: hover) {
@@ -892,11 +845,6 @@
   .active\:bg-\[\#97A6D6\]\/80 {
     &:active {
       background-color: color-mix(in oklab, #97A6D6 80%, transparent);
-    }
-  }
-  .active\:bg-\[\#968080\] {
-    &:active {
-      background-color: #968080;
     }
   }
   .active\:bg-\[\#968080\]\/50 {
@@ -927,11 +875,6 @@
   .active\:bg-\[\#FFF6E3\]\/80 {
     &:active {
       background-color: color-mix(in oklab, #FFF6E3 80%, transparent);
-    }
-  }
-  .active\:text-white {
-    &:active {
-      color: var(--color-white);
     }
   }
   .sm\:block {
@@ -1305,11 +1248,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1356,7 +1294,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
     }
