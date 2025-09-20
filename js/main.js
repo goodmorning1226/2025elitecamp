@@ -418,6 +418,9 @@ if (members_container) {
 
     if (group_num === 0) {
       pkuBox.style.setProperty("--h", "640");
+      pkuBox.getElementsByClassName(
+        "member_selector_container"
+      )[0].style.gridTemplateRows = "repeat(6, minmax(0, 1fr))";
       // NTU 師長
       ntuSelectors.forEach((selector, i) => {
         if (i < ntu_teacher_names.length) {
@@ -449,6 +452,9 @@ if (members_container) {
       selectMember("pku", 0);
     } else {
       pkuBox.style.setProperty("--h", "540");
+      pkuBox.getElementsByClassName(
+        "member_selector_container"
+      )[0].style.gridTemplateRows = "repeat(5, minmax(0, 1fr))";
       // NTU 學生
       for (let i = 0; i < 5; ++i) {
         const imgEl = ntuSelectors[i].getElementsByTagName("img")[0];
