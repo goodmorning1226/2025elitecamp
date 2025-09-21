@@ -554,6 +554,34 @@ body.preload *:not(#preloader):not(#preloader *) {
   }
 }
 
-.after_preload {
-  animation-delay: 500ms;
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-track span {
+  flex: none;
+  padding-right: calc(48 / 1440 * 100vw);
+  font-size: calc(128 / 1440 * 100vw);
+  line-height: calc(128 / 1440 * 100vw);
+  font-weight: 900;
+  color: #968080;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

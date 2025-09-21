@@ -7,7 +7,6 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     preloader.remove();
   }, 500);
-  document.getElementsByTagName("body")[0].classList.add("after_preload");
 
   // 解鎖動畫
   document.body.classList.remove("preload");
