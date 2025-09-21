@@ -85,7 +85,6 @@
   height: calc(355 / 1440 * 100vw);
   border-radius: 20px;
   margin-top: calc(20 / 1440 * 100vw);
-  background-color: white;
 }
 
 .card-compon2 {

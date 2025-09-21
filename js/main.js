@@ -1,3 +1,17 @@
+// 等到整個頁面（包含圖片、字型、CSS 等）都載入完成
+window.addEventListener("load", () => {
+  // 移除 preloader
+  const preloader = document.getElementById("preloader");
+  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.opacity = "0";
+  setTimeout(() => {
+    preloader.remove();
+  }, 500);
+
+  // 解鎖動畫
+  document.body.classList.remove("preload");
+});
+
 const card_colors = [
   "#FFF4E2",
   "#FED7CC",
@@ -34,6 +48,15 @@ const card_location = [
   "./publications",
   "./index.html",
 ];
+const card_thumbnails = [
+  "./image/thumbnail/about.png",
+  "./image/thumbnail/members.png",
+  "./image/thumbnail/taiwan.jpg",
+  "./image/thumbnail/china.jpg",
+  "./image/thumbnail/mails.jpg",
+  "./image/thumbnail/publications.png",
+  "./image/thumbnail/album.png",
+];
 
 const card_container = document.getElementById("card-container");
 
@@ -42,7 +65,9 @@ if (card_container) {
     let card = document.createElement("div");
     card.className = "card";
     card.style.backgroundColor = card_colors[idx];
-    let card_compon1 = document.createElement("div");
+    let card_compon1 = document.createElement("img");
+    card_compon1.src = card_thumbnails[idx];
+    card_compon1.alt = "thumbnail";
     card_compon1.className = "card-compon1";
     card.appendChild(card_compon1);
 
@@ -544,17 +569,3 @@ if (members_container) {
     });
   });
 }
-
-// 等到整個頁面（包含圖片、字型、CSS 等）都載入完成
-window.addEventListener("load", () => {
-  // 移除 preloader
-  const preloader = document.getElementById("preloader");
-  preloader.style.transition = "opacity 0.5s ease";
-  preloader.style.opacity = "0";
-  setTimeout(() => {
-    preloader.remove();
-  }, 500);
-
-  // 解鎖動畫
-  document.body.classList.remove("preload");
-});
