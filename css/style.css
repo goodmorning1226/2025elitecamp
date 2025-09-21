@@ -553,3 +553,7 @@ body.preload *:not(#preloader):not(#preloader *) {
     transform: translateY(0);
   }
 }
+
+.after_preload {
+  animation-delay: 500ms;
+}
