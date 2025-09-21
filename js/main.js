@@ -54,7 +54,7 @@ const card_thumbnails = [
   "./image/thumbnail/taiwan.jpg",
   "./image/thumbnail/china.jpg",
   "./image/thumbnail/mails.jpg",
-  "./image/thumbnail/publications.png",
+  "./image/thumbnail/publications.jpg",
   "./image/thumbnail/album.png",
 ];
 
@@ -413,6 +413,13 @@ const pku_teacher_names = [
 const members_container = document.getElementById("members_container");
 
 if (members_container) {
+  for (let i = 0; i < 4; ++i) {
+    for (let j = 0; j < 5; ++j) {
+      new Image().src = `./image/members/group${i + 1}/ntu/${j + 1}.jpg`;
+      new Image().src = `./image/members/group${i + 1}/pku/${j + 1}.jpg`;
+    }
+  }
+
   const tabs = Array.from(document.getElementsByClassName("members_tab"));
 
   // NTU box
