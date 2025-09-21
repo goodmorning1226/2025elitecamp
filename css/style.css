@@ -297,23 +297,6 @@ nav li {
   margin-right: 1.5vw;
 }
 
-.title {
-  height: 50vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../image/publications.jpg) no-repeat center/cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.title h1 {
-  color: white;
-  font-size: 40px;
-  margin-top: 40px;
-  font-weight: bolder;
-}
-
 .section-header {
   display: flex;
   align-items: center;
