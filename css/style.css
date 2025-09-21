@@ -508,3 +508,49 @@ nav li {
   width: 100%;
   background-color: var(--color) !important;
 }
+
+/*preloader*/
+body.preload *:not(#preloader):not(#preloader *) {
+  animation-play-state: paused !important;
+  transition: none !important;
+}
+
+/* Preloader 覆蓋整個螢幕 */
+#preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 9999;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* 轉圈圈動畫 */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top-color: #968080;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 頁面內容動畫範例 */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

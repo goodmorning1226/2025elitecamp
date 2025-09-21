@@ -544,3 +544,17 @@ if (members_container) {
     });
   });
 }
+
+// 等到整個頁面（包含圖片、字型、CSS 等）都載入完成
+window.addEventListener("load", () => {
+  // 移除 preloader
+  const preloader = document.getElementById("preloader");
+  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.opacity = "0";
+  setTimeout(() => {
+    preloader.remove();
+  }, 500);
+
+  // 解鎖動畫
+  document.body.classList.remove("preload");
+});
