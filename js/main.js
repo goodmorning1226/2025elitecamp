@@ -46,7 +46,7 @@ const card_location = [
   "./china.html",
   "./mails.html",
   "./publications",
-  "./index.html",
+  "https://elitecamp.management.ntu.edu.tw/gallery/#(grid%7Calbum)=/2025;",
 ];
 const card_thumbnails = [
   "./image/thumbnail/about.png",
@@ -55,7 +55,7 @@ const card_thumbnails = [
   "./image/thumbnail/china.jpg",
   "./image/thumbnail/mails.jpg",
   "./image/thumbnail/publications.jpg",
-  "./image/thumbnail/album.png",
+  "./image/thumbnail/album.jpg",
 ];
 
 const card_container = document.getElementById("card-container");
