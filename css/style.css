@@ -262,6 +262,11 @@
   border-radius: calc(var(--radius) / 1440 * 100vw);
 }
 
+.adjust_radiusB {
+  border-bottom-left-radius: calc(var(--radiusB) / 1440 * 100vw);
+  border-bottom-right-radius: calc(var(--radiusB) / 1440 * 100vw);
+}
+
 header {
   background-color: rgba(86, 86, 86, 0.4);
   height: 90px;
