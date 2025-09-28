@@ -163,45 +163,6 @@ if (card_container) {
   });
 }
 
-// const reveal = Array.from(
-//   document.getElementsByClassName("reveal_to_l")
-// ).concat(Array.from(document.getElementsByClassName("reveal_to_r")));
-
-// if (reveal.length > 0) {
-//   const io = new IntersectionObserver(
-//     (entries, observer) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add("in-view");
-//           observer.unobserve(entry.target);
-//         }
-//       });
-//     },
-//     { threshold: 0.5 }
-//   );
-
-//   reveal.forEach((elem) => io.observe(elem));
-// }
-
-// const reveal_to_t = Array.from(document.getElementsByClassName("reveal_to_t"));
-
-// if (reveal_to_t.length > 0) {
-//   const isTrip = window.location.href.includes("day");
-//   const io = new IntersectionObserver(
-//     (entries, observer) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.add("in-view");
-//           observer.unobserve(entry.target);
-//         }
-//       });
-//     },
-//     { threshold: isTrip ? 0.25 : 0.1 }
-//   );
-
-//   reveal_to_t.forEach((elem) => io.observe(elem));
-// }
-
 const thumbnail_to_r = Array.from(
   document.getElementsByClassName("thumbnail_to_r")
 );
@@ -328,10 +289,6 @@ if (slides_container) {
       stop();
       start();
     }
-
-    // 可選：滑鼠移入暫停、移出繼續
-    root.addEventListener("mouseenter", stop);
-    root.addEventListener("mouseleave", start);
 
     // 初始化
     update();
