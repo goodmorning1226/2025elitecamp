@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Elite Camp</title>
+    <title>狀元出品</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tailwind.css" />
   </head>
@@ -216,17 +216,27 @@
         class="absolute w-full h-auto z-0 adjust_top"
       />
 
-      <div class="mx-auto w-5/6">
-        <section class="mb-12">
-          <div class="section-header">紀念專刊</div>
-          <article class="bg-white shadow-sm overflow-hidden">
+      <div class="flex flex-col w-full items-center">
+        <section
+          style="--mb: 64"
+          class="relative z-20 reveal_to_t adjust_marginB"
+        >
+          <h3
+            style="--text: 48; --line: 58; --mb: 33"
+            class="font-bold text-center text-[#968080] adjust_text adjust_marginB"
+          >
+            紀念專刊
+          </h3>
+          <article
+            style="--w: 1024"
+            class="aspect-2/1 shadow-sm overflow-hidden adjust_width"
+          >
             <div class="p-0">
-              <!-- 直接內嵌 PDF；寬度 100%，高度會隨視窗變化 -->
               <object
                 data="files/after_trip.pdf"
                 type="application/pdf"
                 width="100%"
-                style="height: min(80vh, 900px); display: block"
+                class="block aspect-2/1"
                 aria-label="紀念專刊 PDF"
               >
                 <p class="p-4">
@@ -245,15 +255,26 @@
           </article>
         </section>
 
-        <section class="mb-12">
-          <div class="section-header">行前手冊</div>
-          <article class="bg-white shadow-sm overflow-hidden">
+        <section
+          style="--mb: 100"
+          class="relative z-20 reveal_to_t adjust_marginB"
+        >
+          <h3
+            style="--text: 48; --line: 58; --mb: 33"
+            class="font-bold text-center text-[#968080] adjust_text adjust_marginB"
+          >
+            行前手冊
+          </h3>
+          <article
+            style="--w: 1024"
+            class="aspect-2/1 lg:aspect-auto bg-white shadow-sm overflow-hidden adjust_width"
+          >
             <div class="p-0">
               <object
                 data="files/before_trip.pdf"
                 type="application/pdf"
                 width="100%"
-                style="height: min(80vh, 900px); display: block"
+                class="block aspect-2/1"
                 aria-label="行前手冊 PDF"
               >
                 <p class="p-4">
@@ -272,64 +293,98 @@
           </article>
         </section>
 
-        <div class="d-flex justify-content-center mt-4">
-          <a
-            href="assets/files/publications/taiwan.mp4"
-            class="glightbox"
-            data-type="video"
-            data-width="1280"
-            data-height="720"
+        <section style="--mb: 64" class="reveal_to_t adjust_marginB">
+          <h3
+            style="--text: 48; --line: 58; --mb: 33"
+            class="font-bold text-center text-[#968080] adjust_text adjust_marginB"
           >
-            <button
-              class="btn btn-primary btn-lg d-flex align-items-center gap-2"
-            >
-              <i class="bi bi-play-circle"></i>
-              <span>臺灣行回顧</span>
-            </button>
-          </a>
-        </div>
-
-        <section class="mb-12">
-          <div class="section-header reveal_to_t">台灣行 回顧影片</div>
-          <article class="bg-white shadow-sm overflow-hidden reveal_to_t">
-            <div class="flex justify-center">
+            臺灣行回顧影片
+          </h3>
+          <article class="overflow-hidden">
+            <div class="flex justify-center px-[5%] lg:px-0">
               <video
-                class="w-full max-w-3xl rounded-lg shadow-lg"
+                style="--radius: 20"
+                class="w-full max-w-[1024px] shadow-lg adjust_radius"
                 controls
-                poster="assets/images/taiwan_cover.jpg"
+                poster="image/taiwan_video.png"
               >
-                <!-- 可換封面圖 -->
-                <source
-                  src="assets/files/publications/taiwan.mp4"
-                  type="video/mp4"
-                />
+                <source src="files/taiwan.mp4" type="video/mp4" />
                 你的瀏覽器不支援影片播放，請下載觀看：
-                <a href="assets/files/publications/taiwan.mp4">下載影片</a>
+                <a href="files/taiwan.mp4">下載影片</a>
               </video>
             </div>
           </article>
         </section>
 
-        <section>
-          <div class="section-header reveal_to_t">大陸行 回顧影片</div>
-          <article class="bg-white shadow-sm overflow-hidden reveal_to_t">
-            <div class="flex justify-center">
+        <section style="--mb: 130" class="reveal_to_t adjust_marginB">
+          <h3
+            style="--text: 48; --line: 58; --mb: 33"
+            class="font-bold text-center text-[#968080] adjust_text adjust_marginB"
+          >
+            大陸行回顧影片
+          </h3>
+          <article class="overflow-hidden">
+            <div class="flex justify-center px-[5%] lg:px-0">
               <video
-                class="w-full max-w-3xl rounded-lg shadow-lg"
+                style="--radius: 20"
+                class="w-full max-w-[1024px] shadow-lg adjust_radius"
                 controls
-                poster="assets/images/china_cover.jpg"
+                poster="image/china_video.png"
               >
-                <!-- 可換封面圖 -->
-                <source
-                  src="assets/files/publications/china.mp4"
-                  type="video/mp4"
-                />
+                <source src="files/china.mp4" type="video/mp4" />
                 你的瀏覽器不支援影片播放，請下載觀看：
-                <a href="assets/files/publications/china.mp4">下載影片</a>
+                <a href="files/china.mp4">下載影片</a>
               </video>
             </div>
           </article>
         </section>
+      </div>
+    </div>
+
+    <div
+      style="--mt: -30"
+      class="relative flex flex-col w-full bg-[#F3F3F3] rounded-t-[20px] adjust_marginT z-40"
+    >
+      <h3
+        style="--text: 48; --line: 58; --mt: 84; --mb: 60"
+        class="font-bold text-center text-[#968080] adjust_text adjust_marginT adjust_marginB reveal_to_t"
+      >
+        特別感謝
+      </h3>
+      <div
+        class="flex flex-col w-full text-base md:text-xl lg:text-[28px]/[34px] text-[#968080] px-[10%] gap-1 sm:gap-2 reveal_to_t"
+      >
+        <h5>
+          <span class="font-bold">總召：</span>陳卲宇  
+          <span class="font-bold">副召：</span>周妍之
+        </h5>
+        <h5>
+          <span class="font-bold">文書部：</span
+          ><span class="font-medium">黃思穎</span
+          >、林宜璿、謝宜臻、劉威廷、陳昇葳
+        </h5>
+        <h5>
+          <span class="font-bold">影音部：</span
+          ><span class="font-medium">陳巧羚</span
+          >、謝清槐、王睿宇、陳凱琳、劉威廷、謝婉昀
+        </h5>
+        <h5>
+          <span class="font-bold">網站部：</span
+          ><span class="font-medium">宋宇倫</span>、許晨維、陳凱琳、顧懷允
+        </h5>
+        <h5>
+          <span class="font-bold">美宣部：</span
+          ><span class="font-medium">許晨維</span>、林宜璿、曾稚甯
+        </h5>
+        <h5>
+          <span class="font-bold">活動部：</span
+          ><span class="font-medium">劉綵瑜</span
+          >、呂卿華、歐庭芳、李媛、謝清槐、王睿宇、謝婉昀、曾稚甯、謝宜臻、陳昇葳、顧懷允
+        </h5>
+        <br />
+        <h4 class="text-lg md:text-2xl lg:text-[34px]/[34px] font-bold">
+          以及所有臺大北大老師同學們
+        </h4>
       </div>
       <div
         class="w-[50px] aspect-square my-[72px] mx-auto border-[0.5px] border-[#968080] rounded-full"

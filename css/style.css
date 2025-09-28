@@ -302,22 +302,6 @@ nav li {
   margin-right: 1.5vw;
 }
 
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  /* 高度/間距 */
-  padding-top: 4rem; /* 上 padding */
-  padding-bottom: 4rem; /* 下 padding */
-
-  /* 顏色/字型 */
-  color: #1a1a1a; /* 深灰文字 */
-  font-size: 2rem; /* 約 text-3xl */
-  font-weight: 700; /* 粗體 */
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
