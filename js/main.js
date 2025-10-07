@@ -85,7 +85,7 @@ const card_location = [
   "./taiwan.html",
   "./china.html",
   "./mails.html",
-  "./publications",
+  "./publications.html",
   "https://elitecamp.management.ntu.edu.tw/gallery/#(grid%7Calbum)=/2025;",
 ];
 const card_thumbnails = [
@@ -197,32 +197,26 @@ if (thumbnail_to_l) {
 }
 
 const slides_container = document.getElementById("slides_container");
+const taiwan_photo_cnt = [10, 10, 9, 10, 5];
+const china_photo_cnt = [9, 10, 9, 11, 10];
 if (slides_container) {
   const taiwan = window.location.href.includes("taiwan");
   const china = window.location.href.includes("china");
-  const day = window.location.href[window.location.href.indexOf("day") + 3];
+  const day = parseInt(
+    window.location.href[window.location.href.indexOf("day") + 3]
+  );
   if (taiwan) {
-    if (day !== "5") {
-      for (let i = 1; i <= 9; ++i) {
-        let img = document.createElement("img");
-        img.src = `../../image/trip/taiwan/day${day}/${i}.png`;
-        img.alt = "slide";
-        img.className = "object-cover";
-        slides_container.appendChild(img);
-      }
-    } else {
-      for (let i = 1; i <= 4; ++i) {
-        let img = document.createElement("img");
-        img.src = `../../image/trip/taiwan/day${day}/${i}.png`;
-        img.alt = "slide";
-        img.className = "object-cover";
-        slides_container.appendChild(img);
-      }
+    for (let i = 1; i <= taiwan_photo_cnt[day - 1]; ++i) {
+      let img = document.createElement("img");
+      img.src = `../../image/trip/taiwan/day${day.toString()}/${i}.png`;
+      img.alt = "slide";
+      img.className = "object-cover";
+      slides_container.appendChild(img);
     }
   } else if (china) {
-    for (let i = 1; i <= 9; ++i) {
+    for (let i = 1; i <= china_photo_cnt[day - 1]; ++i) {
       let img = document.createElement("img");
-      img.src = `../../image/trip/china/day${day}/${i}.png`;
+      img.src = `../../image/trip/china/day${day.toString()}/${i}.png`;
       img.alt = "slide";
       img.className = "object-cover";
       slides_container.appendChild(img);
