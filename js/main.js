@@ -197,7 +197,7 @@ if (thumbnail_to_l) {
 }
 
 const slides_container = document.getElementById("slides_container");
-const taiwan_photo_cnt = [10, 10, 9, 10, 5];
+const taiwan_photo_cnt = [10, 10, 9, 11, 5];
 const china_photo_cnt = [9, 10, 9, 11, 10];
 if (slides_container) {
   const taiwan = window.location.href.includes("taiwan");
