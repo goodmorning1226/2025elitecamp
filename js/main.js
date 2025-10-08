@@ -11,6 +11,8 @@ window.addEventListener("load", () => {
   // 解鎖動畫
   document.body.classList.remove("preload");
 
+  initSlideshows();
+
   const reveal = Array.from(
     document.getElementsByClassName("reveal_to_l")
   ).concat(Array.from(document.getElementsByClassName("reveal_to_r")));
@@ -197,8 +199,8 @@ if (thumbnail_to_l) {
 }
 
 const slides_container = document.getElementById("slides_container");
-const taiwan_photo_cnt = [10, 10, 9, 11, 5];
-const china_photo_cnt = [9, 10, 9, 11, 10];
+const taiwan_photo_cnt = [10, 10, 10, 11, 4];
+const china_photo_cnt = [10, 10, 10, 11, 10];
 if (slides_container) {
   const taiwan = window.location.href.includes("taiwan");
   const china = window.location.href.includes("china");
@@ -224,7 +226,7 @@ if (slides_container) {
   }
 }
 
-(function () {
+function initSlideshows() {
   // 允許多個獨立的 slideshow（用 data-slideshow 區分）
   const sliders = document.querySelectorAll(".slideshow[data-slideshow]");
 
@@ -287,7 +289,7 @@ if (slides_container) {
     update();
     start();
   });
-})();
+}
 
 (function () {
   const ham = document.getElementById("hamburger");

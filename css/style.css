@@ -385,7 +385,7 @@ nav li {
 /* 讓圓角真正裁切到內部內容 */
 .slider_mask {
   overflow: hidden;
-  border-radius: var(--radius, 0px);
+  border-radius: calc(40 / 1440 * 100vw);
 }
 
 /* 走馬燈本體 */
